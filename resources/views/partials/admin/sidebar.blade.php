@@ -49,6 +49,13 @@
                                 </span>
                                     <span class="menu-title">Hero Main</span>
                                 </a>
+                        <a class="menu-link {{ request()->routeIs('admin.heromain.image*') ? 'active' : '' }}"
+                                   href="{{ route('admin.heromain.image') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                    <span class="menu-title">Heromain Page Images</span>
+                                </a>
 
 
 

@@ -13,9 +13,9 @@ class Mainhero extends Model
     protected $guarded = [];
 
     protected $casts = [
-        'services_cards'=>'array',
-        'work_card'=>'array',
-        'links'=>'array',
-        'info_links'=>'array',
+        'strategy_links'=>'array',
+        'creation_links'=>'array',
+        'row_only_images'=>'array',
+        'footer_link'=>'array',
     ];
 }

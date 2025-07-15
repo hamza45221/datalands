@@ -15,25 +15,18 @@ class CreateMainheroesTable extends Migration
     {
         Schema::create('mainheroes', function (Blueprint $table) {
             $table->id();
-            $table->string('tiitle1')->nullable();
-            $table->string('tiitle2')->nullable();
-            $table->string('tiitle3')->nullable();
+            $table->string('main_name')->nullable();
+            $table->string('main_name_url')->nullable();
+            $table->text('main_desc')->nullable();
             $table->string('main_heading_1')->nullable();
-            $table->string('main_heading_2')->nullable();
-            $table->string('main_video')->nullable();
-            $table->string('main_image')->nullable();
-            $table->string('services_title')->nullable();
-            $table->string('services_left_heading_1')->nullable();
-            $table->string('services_left_heading_2')->nullable();
-            $table->longText('services_cards')->nullable();
-            $table->string('work_title')->nullable();
-            $table->longText('work_card')->nullable();
-            $table->longText('links')->nullable();
-            $table->string('info_title_1')->nullable();
-            $table->string('info_title_2')->nullable();
-            $table->string('info_title_3')->nullable();
-            $table->string('say_hi')->nullable();
-            $table->longText('info_links')->nullable();
+            $table->string('strategy')->nullable();
+            $table->longText('strategy_links')->nullable();
+            $table->string('creation')->nullable();
+            $table->longText('creation_links')->nullable();
+            $table->string('production')->nullable();
+            $table->text('production_links')->nullable();
+            $table->longText('row_only_images')->nullable();
+            $table->longText('footer_link')->nullable();
             $table->timestamps();
         });
     }

@@ -19,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\FrontPagesController::class, 'index'])->name('home');
+Route::get('/index-en', [App\Http\Controllers\FrontPagesController::class, 'indexen'])->name('index.en');
 
 
 
@@ -31,5 +33,12 @@ Route::group(['prefix'=>'admin'], function () {
     Route::group(['prefix' => 'heromain'], function () {
         Route::get('/', [App\Http\Controllers\Admin\HeroMainController::class, 'index'])->name('admin.heromain');
         Route::post('/store', [App\Http\Controllers\Admin\HeroMainController::class, 'store'])->name('admin.heromain.store');
+    });
+
+    Route::group(['prefix' => 'heromain_page_images'], function () {
+        Route::get('/', [App\Http\Controllers\Admin\HeroMainController::class, 'indexImage'])->name('admin.heromain.image');
+        Route::post('/store', [App\Http\Controllers\Admin\HeroMainController::class, 'storeImage'])->name('admin.heromain.image.store');
+        Route::delete('hero-image/delete/{id}', [\App\Http\Controllers\Admin\HeroMainController::class, 'destroyImage'])->name('admin.heromain.image.delete');
+
     });
 });

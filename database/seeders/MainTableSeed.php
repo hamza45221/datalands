@@ -15,148 +15,121 @@ class MainTableSeed extends Seeder
     public function run()
     {
         $main = new Mainhero();
-        $main->tiitle1 = 'Hello';
-        $main->tiitle2 = 'i’m';
-        $main->tiitle3 = 'web-designer';
+        $main->main_name = 'VERTICAL';
+        $main->main_name_url = '';
+        $main->main_desc = 'PROVIDES MARKETING AND COMMUNICATION SUPPORT. ITS MISSION IS TO CREATE AND DEPLOY TARGETED ACTIONS USING AN AGILE METHODOLOGY, IN CLOSE PROXIMITY TO ITS CLIENTS. THE AGENCY CAN INTERVENE AT ANY STAGE OF A PROJECT VIA ITS 3 DEPARTMENTS: STRATEGY, CREATIVE DIRECTION AND PRODUCTION.';
         $main->main_heading_1 = 'Denys';
-        $main->main_heading_2 = 'Verholomchuk';
-        $main->main_video = 'logo.e0d05da8.mp4';
-        $main->main_image = '5.7a0a6a9d.jpg';
-        $main->services_title = 'Services';
-        $main->services_left_heading_1 = 'How can I';
-        $main->services_left_heading_2 = 'assist you?';
-        $main->services_cards = [
-                [
-                    'video'=>'black.35efad0c.mp4',
-                    'counter'=>'01',
-                    'title'=>'Design',
-                    'description'=>'Design services are focused on transforming the essence of
-                                            your brand into a visually appealing and intuitively
-                                            understandable online presence.',
-                ],
-                [
-                    'video'=>'white.9c4ac3d8.mp4',
-                    'counter'=>'02',
-                    'title'=>'Development',
-                    'description'=>'Through web development, we transform projects into
-										functional, interactive websites that deliver exceptional
-										performance.',
-                ],
-                [
-                    'video'=>'blue.8af6d089.mp4',
-                    'counter'=>'03',
-                    'title'=>'Website',
-                    'description'=>'Effective web design and development go hand in hand. A
-										holistic approach combines innovative design concepts with
-										cutting-edge development methods to create websites that
-										leave a lasting impact.',
-                ],
-        ];
-        $main->work_title = 'Works';
-        $main->work_card = [
+
+        $main->strategy = 'STRATEGY';
+        $main->strategy_links = [
             [
-              'image'=>'1.71d70ad8.jpg',
-              'title'=>'Quantum Body',
-              'date'=>'2025',
-              'url'=>'https://www.qntmbody.com/',
-            ],
-            [
-                'image'=>'2.5ec41c7d.jpg',
-                'title'=>'Tyne',
-                'date'=>'2023',
                 'url'=>'',
+                'name'=>'IDENTITY AUDIT',
             ],
             [
-                'image'=>'3.73641314.jpg',
-                'title'=>'Primal Capital',
-                'date'=>'2023',
-                'url'=>'https://www.primalcapital.io/',
+                'url'=>'',
+                'name'=>'BRAND POSITIONING',
             ],
             [
-                'image'=>'4.e11b397f.jpg',
-                'title'=>'Sanctions Finder',
-                'date'=>'2022',
-                'url'=>'https://sanctions-finder.com/',
+                'url'=>'',
+                'name'=>'BRAND PLATFORM',
+            ],
+            [
+                'url'=>'',
+                'name'=>'TONE OF VOICE',
+            ],
+            [
+                'url'=>'',
+                'name'=>'STORY TELLING',
+            ],
+            [
+                'url'=>'',
+                'name'=>'ACTION PLAN',
             ],
         ];
-        $main->links = [
+
+        $main->creation = 'CREATION';
+        $main->creation_links = [
             [
-                'url'=>'https://dribbble.com/verholomchuk',
-                'title'=>'Dribbble',
-                'image1'=>'1.940061eb.jpg',
-                'image2'=>'2.ee218dc9.jpg',
-                'image3'=>'3.21549394.jpg',
-                'image4'=>'4.db22d6b8.jpg',
-                'image5'=>'5.0edf6cd6.jpg',
-                'image6'=>'6.4482b997.jpg',
+                'url'=>'',
+                'name'=>'CREATIVE DIRECTION',
             ],
             [
-                'url'=>'https://www.behance.net/verholomchuk',
-                'title'=>'Behance',
-                'image1'=>'1.414932c2.jpg',
-                'image2'=>'2.445899d3.jpg',
-                'image3'=>'3.6b9c0243.jpg',
-                'image4'=>'4.68472d3b.jpg',
-                'image5'=>'5.6c320a38.jpg',
-                'image6'=>'6.816e13ee.jpg',
+                'url'=>'',
+                'name'=>'COPYWRITING',
             ],
             [
-                'url'=>'https://www.pinterest.com/denisverholomchuk/',
-                'title'=>'Pinterest',
-                'image1'=>'1.b71a109f.jpg',
-                'image2'=>'2.69339a6a.jpg',
-                'image3'=>'3.6f4f5f8a.jpg',
-                'image4'=>'4.d0199942.jpg',
-                'image5'=>'5.b8523981.jpg',
-                'image6'=>'6.bd484797.jpg',
+                'url'=>'',
+                'name'=>'NAMING & BRANDING',
             ],
             [
-                'url'=>'https://www.linkedin.com/in/verholomchuk/',
-                'title'=>'LinkedIn',
-                'image1'=>'1.1ac2c909.jpg',
-                'image2'=>'2.cede4845.jpg',
-                'image3'=>'3.1e72e716.jpg',
-                'image4'=>'4.8102b88a.jpg',
-                'image5'=>'5.e5a85a76.jpg',
-                'image6'=>'6.4640ebb5.jpg',
+                'url'=>'',
+                'name'=>'PRINT DESIGN',
             ],
             [
-                'url'=>'https://www.youtube.com/@verholomchuk',
-                'title'=>'Youtube',
-                'image1'=>'1.ed2a9f1f.jpg',
-                'image2'=>'2.1473e33e.jpg',
-                'image3'=>'3.ac2b0d94.jpg',
-                'image4'=>'4.d3dc540e.jpg',
-                'image5'=>'5.7bde7b01.jpg',
-                'image6'=>'6.e261045c.jpg',
+                'url'=>'',
+                'name'=>'DIGITAL DESIGN',
+            ],
+            [
+                'url'=>'',
+                'name'=>'E-COMMERCE DESIGN',
             ],
         ];
-        $main->info_title_1= 'let`s start';
-        $main->info_title_2= 'creating';
-        $main->info_title_3= 'together';
-        $main->say_hi= 'say hi';
-        $main->info_links = [
+
+
+        $main->production = 'PRODUCTION';
+        $main->production_links = '
+        <ul>
+                    <li><strong>DIGITAL:</strong> HTML, CMS, LOW CARBON <br>SOLUTIONS</li>
+                    <li><strong>VIDEO:</strong> CAPTATION, <br>EDITING, MOTION DESIGN, </li>
+                    <li><strong>PHOTO:</strong> PRODUCTION <br>TEAMS SET UP, <br>RETOUCHING, 3D </li>
+                    <li><strong>RADIO:</strong> VOICE CASTING, <br>RECORDING, MIXING </li>
+                    <li><strong>PRINTING:</strong> ALL <br>TYPES (PREMIUM, <br>ADVERTISING, <br>LARGE VOLUMES)</li>
+                </ul>
+        ';
+
+        $main->row_only_images =[
+            'image1'=>'assets/img/Logos/1-Alliance.svg',
+            'image2'=>'assets/img/Logos/2-Nike.svg',
+            'image3'=>'assets/img/Logos/3-Showroom-Group.svg',
+            'image4'=>'assets/img/Logos/4-Endenred.svg',
+            'image5'=>'assets/img/Logos/5-PUIG.svg',
+            'image6'=>'assets/img/Logos/6-HEV.svg',
+            'image7'=>'assets/img/Logos/7-Nemours.svg',
+            'image8'=>'assets/img/Logos/8-LVMH.svg',
+            'image9'=>'assets/img/Logos/9-ADM.svg',
+            'image10'=>'assets/img/Logos/10-Gas.svg',
+            'image11'=>'assets/img/Logos/11-Arche.svg',
+        ];
+
+        $main->footer_link = [
             [
-                'url'=>'https://dribbble.com/verholomchuk',
-                'title'=>'Dribbble',
+                'url'=>'tel:+33 (0)1 55 28 59 81',
+                'heading'=>'33 RUE SAINT AMBROISE, 75011 PARIS',
+                'url_name'=>'+33 (0)1 55 28 59 81',
             ],
             [
-                'url'=>'https://www.behance.net/verholomchuk',
-                'title'=>'Behance',
+                'url'=>'mailto:RECRUTEMENT@VERTICALPARIS.COM',
+                'heading'=>'JOBS - INTERNSHIPS:',
+                'url_name'=>'RECRUTEMENT@VERTICALPARIS.COM',
             ],
             [
-                'url'=>'https://www.linkedin.com/in/verholomchuk/',
-                'title'=>'LinkedIn',
+                'url'=>'mailto:CONTACT@VERTICALPARIS.COM',
+                'heading'=>'GENERAL INFORMATION - NEW BUSINESS:',
+                'url_name'=>'CONTACT@VERTICALPARIS.COM',
             ],
             [
-                'url'=>'https://t.me/verholomchuk',
-                'title'=>'Telegram',
+                'url'=>'mention-legales-FR-24.pdf',
+                'heading'=>'',
+                'url_name'=>'LEGAL NOTICES',
             ],
             [
-                'url'=>'https://www.youtube.com/@verholomchuk',
-                'title'=>'Youtube',
+                'url'=>'',
+                'heading'=>'',
+                'url_name'=>'FR',
             ],
         ];
+
         $main->save();
 
     }

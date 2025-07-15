@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\MainHeroPageImage;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,5 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call([UserTableSeed::class]);
         $this->call([MainTableSeed::class]);
         $this->call([PopupTableSeed::class]);
+        $this->call([MainHeroPageImageSeed::class]);
+        $this->call([DataLandTableSeed::class]);
     }
 }

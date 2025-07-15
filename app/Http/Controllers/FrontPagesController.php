@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Mainhero;
+use App\Models\MainHeroPageImage;
+use Illuminate\Http\Request;
+
+class FrontPagesController extends Controller
+{
+    public function index()
+    {
+        return view('frontpages.index');
+    }
+    public function indexen()
+    {
+        $index_en = Mainhero::first();
+        $main_page_img = MainHeroPageImage::all();
+        return view('frontpages.index-en',compact('index_en','main_page_img'));
+    }
+}

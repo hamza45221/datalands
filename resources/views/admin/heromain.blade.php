@@ -93,295 +93,55 @@
 
                               <div class="row">
                                   <div class=" col-md-4 fv-row mb-7">
-                                      <label class="required fs-6 fw-semibold mb-2">Tiitle 1 </label>
-                                      <input type="text" name="tiitle1" value="{{ $heromain->tiitle1 ?? '' }}" class="form-control form-control-solid" placeholder="Title 1">
+                                      <label class="required fs-6 fw-semibold mb-2">Main Name </label>
+                                      <input type="text" name="main_name" value="{{ $heromain->main_name ?? '' }}" class="form-control form-control-solid" placeholder="Main Name">
                                   </div>
                                   <div class=" col-md-4 fv-row mb-7">
-                                      <label class="required fs-6 fw-semibold mb-2">Tiitle 2 </label>
-                                      <input type="text" name="tiitle2" value="{{ $heromain->tiitle2 ?? '' }}" class="form-control form-control-solid" placeholder="Title 2">
-                                  </div>
-                                  <div class=" col-md-4 fv-row mb-7">
-                                      <label class="required fs-6 fw-semibold mb-2">Tiitle 3 </label>
-                                      <input type="text" name="tiitle3" value="{{ $heromain->tiitle3 ?? '' }}" class="form-control form-control-solid" placeholder="Title 3">
+                                      <label class="required fs-6 fw-semibold mb-2">Main Name Url </label>
+                                      <input type="text" name="main_name_url" value="{{ $heromain->main_name_url ?? '' }}" class="form-control form-control-solid" placeholder="Main Name Url">
                                   </div>
                               </div>
 
-                                <div class="row">
+                                    <div class=" col-md-12  fv-row mb-7">
+                                        <label class="required fs-6 fw-semibold mb-2">Main Description</label>
+                                        <textarea name="main_desc" id="ck-editor" class="form-control form-control-solid" placeholder="Write Description...">{!! $heromain->main_desc !!}</textarea>
+                                    </div>
+
+                                    <div class=" col-md-6 fv-row mb-7">
+                                        <label class="fs-6 fw-semibold mb-2">Main Heading 1</label>
+                                        <input type="text" name="main_heading_1" value="{{ $heromain->main_heading_1 ?? '' }}" class="form-control form-control-solid" placeholder="main Heading 1">
+                                    </div>
                                     <div class=" col-md-6  fv-row mb-7">
-                                        <label class="required fs-6 fw-semibold mb-2">Main Heading 1</label>
-                                        <input type="text" name="main_heading_1" value="{{ $heromain->main_heading_1 ?? '' }}" class="form-control form-control-solid" placeholder="Main Heading 1">
+                                        <label class="fs-6 fw-semibold mb-2">Strategy</label>
+                                        <input type="text" name="strategy" value="{{ $heromain->strategy ?? '' }}" class="form-control form-control-solid" placeholder="Strategy">
                                     </div>
 
 
-                                    <div class="col-md-6 fv-row mb-7">
-                                        <label class="fs-6 fw-semibold mb-2">Main Heading 2</label>
-                                        <input type="text" name="main_heading_2" value="{{ $heromain->main_heading_2 ?? '' }}" class="form-control form-control-solid" placeholder="Main Heading 2">
-                                    </div>
-                                </div>
-
-                                <div class="fv-row mb-7">
-                                    <label class="fs-6 fw-semibold mb-2">Main Video </label>
-                                    <input type="file" name="main_video" value="{{ $heromain->main_video ?? '' }}" class="form-control form-control-solid" placeholder="main video">
-                                </div>
-
-                                @if (!empty($heromain->main_video))
-                                    <video width="320" height="240" controls class="mt-3">
-                                        <source src="{{ asset( $heromain->main_video) }}" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                @endif
-
-                              <div class="row">
-                                  <div class=" col-md-6 fv-row mb-7">
-                                      <label class="fs-6 fw-semibold mb-2">Main Image</label>
-                                      <input type="file" name="main_image" value="{{ $heromain->main_image ?? '' }}" class="form-control form-control-solid" placeholder="Main Image">
-                                      <img src="{{ asset($heromain->main_image) }}" width="80px" />
-                                  </div>
-
-                                  <div class=" col-md-6 fv-row mb-7">
-                                      <label class="fs-6 fw-semibold mb-2">Services Title</label>
-                                      <input type="text" name="services_title" value="{{ $heromain->services_title ?? '' }}" class="form-control form-control-solid" placeholder="Services Title">
-                                  </div>
-                              </div>
-
-                                <div class="row">
-                                    <div class=" col-md-6 fv-row mb-7">
-                                        <label class="fs-6 fw-semibold mb-2">Services Left Heading 1</label>
-                                        <input type="text" name="services_left_heading_1" value="{{ $heromain->services_left_heading_1 ?? '' }}" class="form-control form-control-solid" placeholder="Services Left Heading 1">
-                                    </div>
-
-                                    <div class=" col-md-6 fv-row mb-7">
-                                        <label class="fs-6 fw-semibold mb-2">Services Left Heading 2</label>
-                                        <input type="text" name="services_left_heading_2" value="{{ $heromain->services_left_heading_2 ?? '' }}" class="form-control form-control-solid" placeholder="Services Left Heading 2">
-                                    </div>
-                                </div>
-
-                                <div id="services_cards_repeater">
-                                    <div data-repeater-list="services_cards">
+                                <div id="strategy_links_repeater">
+                                    <div data-repeater-list="strategy_links">
                                         @php
-                                            $cards = old('services_cards', $heromain->services_cards ?? []);
+                                            $strategyLinks = old('strategy_links', $heromain->strategy_links ?? []);
                                         @endphp
 
-                                        @foreach ($cards as $index => $card)
+                                        @foreach ($strategyLinks as $link)
                                             <div data-repeater-item>
                                                 <div class="row mb-5">
-                                                    <!-- Video Upload -->
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Service Video</label>
-                                                        <input type="file" name="video" class="form-control mb-2">
-                                                        @if (!empty($card['video']))
-                                                            <video width="250" height="140" controls class="mt-2">
-                                                                <source src="{{ asset($card['video']) }}" type="video/mp4">
-                                                                Your browser does not support the video tag.
-                                                            </video>
-                                                            <input type="hidden" name="old_video" value="{{ $card['video'] }}">
-                                                        @endif
-                                                    </div>
-
-                                                    <!-- Counter -->
-                                                    <div class="col-md-2">
-                                                        <label class="form-label">Counter</label>
-                                                        <input type="text" name="counter" value="{{ $card['counter'] ?? '' }}" class="form-control">
-                                                    </div>
-
-                                                    <!-- Title -->
-                                                    <div class="col-md-4">
-                                                        <label class="form-label">Title</label>
-                                                        <input type="text" name="title" value="{{ $card['title'] ?? '' }}" class="form-control">
-                                                    </div>
-
-                                                    <!-- Description -->
-                                                    <div class="col-md-12 mt-3">
-                                                        <label class="form-label">Description</label>
-                                                        <textarea name="description" class="form-control" rows="3">{{ $card['description'] ?? '' }}</textarea>
-                                                    </div>
-
-                                                    <!-- Delete Button -->
-                                                    <div class="col-12 mt-3 text-end">
-                                                        <a href="javascript:;" data-repeater-delete class="btn btn-sm btn-light-danger">
-                                                            <i class="la la-trash-o"></i> Delete
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                            </div>
-                                        @endforeach
-                                    </div>
-
-                                    <!-- Add Button -->
-                                    <div class="form-group mt-5 mb-4">
-                                        <a href="javascript:;" data-repeater-create class="btn btn-sm btn-light-primary">
-                                            <i class="la la-plus"></i> Add Service Card
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 fv-row mb-7">
-                                    <label class="fs-6 fw-semibold mb-2">Work Title</label>
-                                    <input type="text" name="work_title" value="{{ $heromain->work_title ?? '' }}" class="form-control form-control-solid" placeholder="Work Title">
-                                </div>
-
-
-                                <div id="work_card_repeater">
-                                    <div data-repeater-list="work_card">
-                                        @php
-                                            $cards = old('work_card', $heromain->work_card ?? []);
-                                        @endphp
-
-                                        @foreach ($cards as $index => $card)
-                                            <div data-repeater-item>
-                                                <div class="row mb-5">
-                                                    <!-- Image Upload -->
-                                                    <div class="col-md-4">
-                                                        <label class="form-label">Project Image</label>
-                                                        <input type="file" name="image" class="form-control mb-2">
-                                                        @if (!empty($card['image']))
-                                                            <img src="{{ asset( $card['image']) }}" width="70" class="mt-2" alt="Image">
-                                                            <input type="hidden" name="old_image" value="{{ $card['image'] }}">
-                                                        @endif
-                                                    </div>
-
-                                                    <!-- Title -->
-                                                    <div class="col-md-4">
-                                                        <label class="form-label">Title</label>
-                                                        <input type="text" name="title" value="{{ $card['title'] ?? '' }}" class="form-control">
-                                                    </div>
-
-                                                    <!-- Date -->
-                                                    <div class="col-md-2">
-                                                        <label class="form-label">Year</label>
-                                                        <input type="text" name="date" value="{{ $card['date'] ?? '' }}" class="form-control">
-                                                    </div>
-
-                                                    <!-- URL -->
-                                                    <div class="col-md-2">
-                                                        <label class="form-label">Website URL</label>
-                                                        <input type="text" name="url" value="{{ $card['url'] ?? '' }}" class="form-control">
-                                                    </div>
-
-                                                    <!-- Delete Button -->
-                                                    <div class="col-12 mt-3 text-end">
-                                                        <a href="javascript:;" data-repeater-delete class="btn btn-sm btn-light-danger">
-                                                            <i class="la la-trash"></i> Delete
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                            </div>
-                                        @endforeach
-                                    </div>
-
-                                    <!-- Add Button -->
-                                    <div class="form-group mt-5 mb-4">
-                                        <a href="javascript:;" data-repeater-create class="btn btn-sm btn-light-primary">
-                                            <i class="la la-plus"></i> Add Work Card
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div id="links_repeater">
-                                    <div data-repeater-list="links">
-                                        @php
-                                            $links = old('links', $heromain->links ?? []);
-                                        @endphp
-
-                                        @foreach ($links as $link)
-                                            <div data-repeater-item>
-                                                <div class="row mb-5">
-                                                    <!-- Title -->
-                                                    <div class="col-md-4">
-                                                        <label class="form-label">Title</label>
-                                                        <input type="text" name="title" value="{{ $link['title'] ?? '' }}" class="form-control">
-                                                    </div>
-
-                                                    <!-- URL -->
-                                                    <div class="col-md-8">
-                                                        <label class="form-label">URL</label>
-                                                        <input type="text" name="url" value="{{ $link['url'] ?? '' }}" class="form-control">
-                                                    </div>
-
-                                                    <!-- Images -->
-                                                    @for ($i = 1; $i <= 6; $i++)
-                                                        @php $imageKey = 'image' . $i; @endphp
-                                                        <div class="col-md-2 mt-4">
-                                                            <label class="form-label">Image {{ $i }}</label>
-                                                            <input type="file" name="image{{ $i }}" class="form-control mb-2">
-                                                            @if (!empty($link[$imageKey]))
-                                                                <img src="{{ asset( $link[$imageKey]) }}" width="70" class="mt-2" alt="Image {{ $i }}">
-                                                                <input type="hidden" name="old_image{{ $i }}" value="{{ $link[$imageKey] }}">
-                                                            @endif
-                                                        </div>
-                                                    @endfor
-
-                                                    <!-- Delete -->
-                                                    <div class="col-12 mt-3 text-end">
-                                                        <a href="javascript:;" data-repeater-delete class="btn btn-sm btn-light-danger">
-                                                            <i class="la la-trash"></i> Delete
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                            </div>
-                                        @endforeach
-                                    </div>
-
-                                    <!-- Add Button -->
-                                    <div class="form-group mt-5 mb-4">
-                                        <a href="javascript:;" data-repeater-create class="btn btn-sm btn-light-primary">
-                                            <i class="la la-plus"></i> Add Link
-                                        </a>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="row">
-                                    <div class=" col-md-4 fv-row mb-7">
-                                        <label class="fs-6 fw-semibold mb-2">Info Title 1</label>
-                                        <input type="text" name="info_title_1" value="{{ $heromain->info_title_1 ?? '' }}" class="form-control form-control-solid" placeholder="Info Title 1">
-                                    </div>
-
-                                    <div class=" col-md-4 fv-row mb-7">
-                                        <label class="fs-6 fw-semibold mb-2">Info Title 2</label>
-                                        <input type="text" name="info_title_2" value="{{ $heromain->info_title_2 ?? '' }}" class="form-control form-control-solid" placeholder="Info Title 2">
-                                    </div>
-
-                                    <div class=" col-md-4 fv-row mb-7">
-                                        <label class="fs-6 fw-semibold mb-2">Info Title 3</label>
-                                        <input type="text" name="info_title_3" value="{{ $heromain->info_title_3 ?? '' }}" class="form-control form-control-solid" placeholder="Info Title 3">
-                                    </div>
-                                </div>
-
-                                <div class=" col-md-6 fv-row mb-7">
-                                    <label class="fs-6 fw-semibold mb-2">Say Hi</label>
-                                    <input type="text" name="say_hi" value="{{ $heromain->say_hi ?? '' }}" class="form-control form-control-solid" placeholder="Say Hi">
-                                </div>
-
-                                <div id="info_links_repeater">
-                                    <div data-repeater-list="info_links">
-                                        @php
-                                            $infoLinks = old('info_links', $heromain->info_links ?? []);
-                                        @endphp
-
-                                        @foreach ($infoLinks as $link)
-                                            <div data-repeater-item>
-                                                <div class="row mb-4 align-items-end">
-                                                    <!-- Title -->
-                                                    <div class="col-md-4">
-                                                        <label class="form-label">Title</label>
-                                                        <input type="text" name="title" value="{{ $link['title'] ?? '' }}" class="form-control" placeholder="e.g. Dribbble">
-                                                    </div>
-
                                                     <!-- URL -->
                                                     <div class="col-md-6">
                                                         <label class="form-label">URL</label>
-                                                        <input type="url" name="url" value="{{ $link['url'] ?? '' }}" class="form-control" placeholder="e.g. https://dribbble.com/">
+                                                        <input type="text" name="url" class="form-control" value="{{ $link['url'] ?? '' }}">
                                                     </div>
 
-                                                    <!-- Delete -->
-                                                    <div class="col-md-2 text-end">
-                                                        <a href="javascript:;" data-repeater-delete class="btn btn-sm btn-light-danger">
-                                                            <i class="la la-trash"></i> Delete
+                                                    <!-- Name -->
+                                                    <div class="col-md-5">
+                                                        <label class="form-label">Name</label>
+                                                        <input type="text" name="name" class="form-control" value="{{ $link['name'] ?? '' }}">
+                                                    </div>
+
+                                                    <!-- Delete Button -->
+                                                    <div class="col-md-1 d-flex align-items-end">
+                                                        <a href="javascript:;" data-repeater-delete class="btn btn-sm btn-light-danger mt-3">
+                                                            <i class="la la-trash-o"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -390,13 +150,158 @@
                                     </div>
 
                                     <!-- Add Button -->
-                                    <div class="form-group mt-3 mb-4">
-                                        <a href="javascript:;" data-repeater-create class="btn btn-sm btn-light-primary">
-                                            <i class="la la-plus"></i> Add Info Link
+                                    <div class="form-group mt-3">
+                                        <a href="javascript:;" data-repeater-create class="btn my-4 btn-sm btn-light-primary">
+                                            <i class="la la-plus"></i> Add Strategy Link
                                         </a>
                                     </div>
                                 </div>
 
+                                <div class=" col-md-6  fv-row mb-7">
+                                    <label class="fs-6 fw-semibold mb-2">Creation</label>
+                                    <input type="text" name="creation" value="{{ $heromain->creation ?? '' }}" class="form-control form-control-solid" placeholder="Creation">
+                                </div>
+
+                                <div id="creation_links_repeater">
+                                    <div data-repeater-list="creation_links">
+                                        @php
+                                            $strategyLinks = old('creation_links', $heromain->creation_links ?? []);
+                                        @endphp
+
+                                        @foreach ($strategyLinks as $link)
+                                            <div data-repeater-item>
+                                                <div class="row mb-5">
+                                                    <!-- URL -->
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">URL</label>
+                                                        <input type="text" name="url" class="form-control" value="{{ $link['url'] ?? '' }}">
+                                                    </div>
+
+                                                    <!-- Name -->
+                                                    <div class="col-md-5">
+                                                        <label class="form-label">Name</label>
+                                                        <input type="text" name="name" class="form-control" value="{{ $link['name'] ?? '' }}">
+                                                    </div>
+
+                                                    <!-- Delete Button -->
+                                                    <div class="col-md-1 d-flex align-items-end">
+                                                        <a href="javascript:;" data-repeater-delete class="btn btn-sm btn-light-danger mt-3">
+                                                            <i class="la la-trash-o"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+
+                                    <!-- Add Button -->
+                                    <div class="form-group mt-3">
+                                        <a href="javascript:;" data-repeater-create class="btn btn-sm my-4 btn-light-primary">
+                                            <i class="la la-plus"></i> Add Strategy Link
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class=" col-md-6  fv-row mb-7">
+                                    <label class="fs-6 fw-semibold mb-2">Production</label>
+                                    <input type="text" name="production" value="{{ $heromain->production ?? '' }}" class="form-control form-control-solid" placeholder="Production">
+                                </div>
+
+                                <div class=" col-md-12  fv-row mb-7">
+                                    <label class="required fs-6 fw-semibold mb-2">Production Links</label>
+                                    <textarea name="production_links" id="production_links" class="form-control form-control-solid" placeholder="Write Description...">{!! $heromain->production_links !!}</textarea>
+                                </div>
+
+
+                                <div id="images_repeater">
+                                    <div data-repeater-list="row_only_images">
+                                        @php
+                                            // Get old input or existing database values
+                                            $images = old('row_only_images', []);
+                                            $existingImages = $heromain->row_only_images ?? [];
+
+                                            // If old input is empty but existing DB data exists
+                                            if (empty($images) && !empty($existingImages)) {
+                                                foreach ($existingImages as $item) {
+                                                    $images[] = is_array($item) ? $item : ['url' => $item];
+                                                }
+                                            }
+                                        @endphp
+
+                                        @foreach ($images as $image)
+                                            <div data-repeater-item>
+                                                <div class="row mb-5 align-items-center">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Image logo</label>
+                                                        <input type="file" name="url" class="form-control image-input" accept="image/*">
+                                                        <input type="hidden" name="existing_url" value="{{ $image['url'] ?? '' }}">
+
+                                                        @if (!empty($image['url']))
+                                                            <img src="{{ asset($image['url']) }}" class="img-preview mt-2" style="max-height: 80px;">
+                                                        @endif
+                                                    </div>
+                                                    <div class="col-md-1 d-flex align-items-end">
+                                                        <a href="javascript:;" data-repeater-delete class="btn btn-sm btn-light-danger mt-3">
+                                                            <i class="la la-trash-o"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+
+                                    <div class="form-group mt-4 mb-4">
+                                        <a href="javascript:;" data-repeater-create class="btn btn-sm btn-light-primary">
+                                            <i class="la la-plus"></i> Add Image
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div id="footer_links_repeater">
+                                    <div data-repeater-list="footer_link">
+                                        @php
+                                            $footerLinks = old('footer_link', $heromain->footer_link ?? []);
+                                        @endphp
+
+                                        @foreach ($footerLinks as $footer)
+                                            <div data-repeater-item>
+                                                <div class="row mb-5">
+                                                    <!-- URL -->
+                                                    <div class="col-md-4">
+                                                        <label class="form-label">URL</label>
+                                                        <input type="text" name="url" class="form-control" value="{{ $footer['url'] ?? '' }}">
+                                                    </div>
+
+                                                    <!-- Heading -->
+                                                    <div class="col-md-4">
+                                                        <label class="form-label">Heading</label>
+                                                        <input type="text" name="heading" class="form-control" value="{{ $footer['heading'] ?? '' }}">
+                                                    </div>
+
+                                                    <!-- URL Name -->
+                                                    <div class="col-md-3">
+                                                        <label class="form-label">Link Text</label>
+                                                        <input type="text" name="url_name" class="form-control" value="{{ $footer['url_name'] ?? '' }}">
+                                                    </div>
+
+                                                    <!-- Delete Button -->
+                                                    <div class="col-md-1 d-flex align-items-end">
+                                                        <a href="javascript:;" data-repeater-delete class="btn btn-sm btn-light-danger mt-3">
+                                                            <i class="la la-trash-o"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+
+                                    <!-- Add Button -->
+                                    <div class="form-group mt-3">
+                                        <a href="javascript:;" data-repeater-create class="btn btn-sm btn-light-primary">
+                                            <i class="la la-plus"></i> Add Footer Link
+                                        </a>
+                                    </div>
+                                </div>
 
 
 
@@ -468,14 +373,61 @@
                 console.error(error);
             });
 
+        ClassicEditor
+            .create(document.querySelector('#production_links'))
+            .then(editor => {
+                console.log(editor);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
 
         $(document).ready(function () {
-            $('#services_cards_repeater').repeater({
+            $('#strategy_links_repeater').repeater({
                 initEmpty: false,
                 defaultValues: {
-                    'counter': '',
-                    'title': '',
-                    'description': ''
+                    'url': '',
+                    'name': ''
+                },
+                show: function () {
+                    $(this).slideDown();
+                },
+                hide: function (deleteElement) {
+                    $(this).slideUp(deleteElement);
+                }
+            });
+            $('#creation_links_repeater').repeater({
+                initEmpty: false,
+                defaultValues: {
+                    'url': '',
+                    'name': ''
+                },
+                show: function () {
+                    $(this).slideDown();
+                },
+                hide: function (deleteElement) {
+                    $(this).slideUp(deleteElement);
+                }
+            });
+            $('#images_repeater').repeater({
+                initEmpty: false,
+                defaultValues: {
+                    'url': ''
+                },
+                show: function () {
+                    $(this).slideDown();
+                },
+                hide: function (deleteElement) {
+                    $(this).slideUp(deleteElement);
+                }
+            });
+            $('#footer_links_repeater').repeater({
+                initEmpty: false,
+                defaultValues: {
+                    'url': '',
+                    'heading': '',
+                    'url_name': ''
                 },
                 show: function () {
                     $(this).slideDown();
@@ -485,47 +437,7 @@
                 }
             });
 
-            $('#work_card_repeater').repeater({
-                initEmpty: false,
-                defaultValues: {
-                    'title': '',
-                    'date': '',
-                    'url': ''
-                },
-                show: function () {
-                    $(this).slideDown();
-                },
-                hide: function (deleteElement) {
-                    $(this).slideUp(deleteElement);
-                }
-            });
 
-            $('#links_repeater').repeater({
-                initEmpty: false,
-                defaultValues: {
-                    'title': '',
-                    'url': ''
-                },
-                show: function () {
-                    $(this).slideDown();
-                },
-                hide: function (deleteElement) {
-                    $(this).slideUp(deleteElement);
-                }
-            });
-            $('#info_links_repeater').repeater({
-                initEmpty: false,
-                defaultValues: {
-                    'title': '',
-                    'url': ''
-                },
-                show: function () {
-                    $(this).slideDown();
-                },
-                hide: function (deleteElement) {
-                    $(this).slideUp(deleteElement);
-                }
-            });
         });
 
 
