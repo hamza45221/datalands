@@ -63,30 +63,6 @@ class DataLandTableSeed extends Seeder
 
         ];
         $index_dataland->work_title ='SOME MORE WORK THAT WE LOVE';
-//        $index_dataland->work_crousel=[
-//            [
-//              'image1'=>'dataland/images/DI83a8W9Vy4cIjVTZIFyFSnUHQI.jpg?scale-down-to=1024',
-//              'image2'=>'dataland/images/oJYuZ8IQGBoZl9wA65ZW5hnP8s.png?scale-down-to=1024',
-//              'image3'=>'dataland/images/s2sVCl1q0tZAShQ4bYOHVp9XX20.jpg?scale-down-to=1024',
-//              'image4'=>'dataland/dataland/images/nYZViNd65YtRcE3Io1QcbSmjxw.gif?scale-down-to=1024',
-//              'image5'=>'dataland/dataland/images/pxaGFdiooUqV6C9aUAI7risDGi4.png?scale-down-to=1024',
-//              'image6'=>'https://framerusercontent.com/images/vbv3h8O5ynFTIUCSRGftFay9GQ.gif?scale-down-to=512',
-//              'image7'=>'dataland/images/mDzG7UGLQVhKxxT004KO0oP0sQ.png?scale-down-to=1024',
-//              'video8'=>'dataland/assets/pVwibjP3n1kYXbXfRrweBzeAGw.mp4',
-//              'imag9'=>'dataland/images/p3Zg0XDcYdFDywkXoZWq3Wlt8.png?scale-down-to=1024',
-//              'image10'=>'dataland/images/oIoGyTffpMKG59imu4Uo34uhXps.png?scale-down-to=2048',
-//              'image11'=>'dataland/images/9QpccXc6m8Oa2z7at1baXwhDl8.png?scale-down-to=2048',
-//              'image12'=>'dataland/dataland/images/1HtlraFW5vq1rhJf3Am7QFbfZBA.jpg?scale-down-to=1024',
-//              'image13'=>'images/HMG9NKptNHJv5VDW35o27D7YUCo.png?scale-down-to=1024',
-//              'image14'=>'dataland/dataland/images/uaiTRUGAsE2CilDgLc0Sgf4CSw.png?scale-down-to=1024',
-//              'image15'=>'dataland/dataland/images/Y0bCPo4nLQ9CC6vseoIG6jZ5FWs.png?scale-down-to=4096',
-//              'image16'=>'dataland/images/xVz7bApJ3ZXuFxQfvyInkbYgmvQ.png?scale-down-to=2048',
-//              'image17'=>'dataland/dataland/images/DI83a8W9Vy4cIjVTZIFyFSnUHQI.jpg?scale-down-to=1024',
-//              'image18'=>'dataland/images/oJYuZ8IQGBoZl9wA65ZW5hnP8s.png?scale-down-to=1024',
-//              'image19'=>'dataland/images/s2sVCl1q0tZAShQ4bYOHVp9XX20.jpg?scale-down-to=1024',
-//              'image20'=>'dataland/images/nYZViNd65YtRcE3Io1QcbSmjxw.gif?scale-down-to=1024',
-//            ],
-//        ];
 
         $index_dataland->services_title ='Services';
         $index_dataland->services_list =[
@@ -247,7 +223,7 @@ class DataLandTableSeed extends Seeder
         $index_dataland->behance_title ='/datalands';
 
         $index_dataland->footer_title ='New Business';
-        $index_dataland->footer_email ='hi@datalands.co';
+        $index_dataland->footer_email ='@datalands.co';
         $index_dataland->footer_detail ='©2019-24 Datalands™ | Lands of Data® LLC';
         $index_dataland->save();
     }

@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         $this->call([PopupTableSeed::class]);
         $this->call([MainHeroPageImageSeed::class]);
         $this->call([DataLandTableSeed::class]);
+        $this->call([DataLasdCrouselImagesSeed::class]);
     }
 }

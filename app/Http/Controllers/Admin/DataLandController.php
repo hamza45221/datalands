@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\DataLand;
+use App\Models\DataLandCrouselImage;
 use App\Models\Mainhero;
+use App\Models\MainHeroPageImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -18,7 +20,7 @@ class DataLandController extends Controller
 
     public function store(Request $request)
     {
-        $hero = Mainhero::first() ?? new Mainhero();
+        $hero = DataLand::first();
 
         // Basic fields
         $hero->main_heading = $request->input('main_name');
@@ -57,52 +59,148 @@ class DataLandController extends Controller
         $hero->footer_detail = $request->input('footer_detail');
 
 
-        $hero->strategy_links = $request->strategy_links ?? [];
-        $hero->creation_links = $request->creation_links ?? [];
-        $hero->footer_link = $request->footer_link ?? [];
 
-        $video = '';
-        if($request->hasFile('process_video')){
-            $video = $request->file('process_video')->store('videos',['disk' => 'public']);
-        }
-        $hero->process_video = $video;
+        $existingServices   = $hero->services_list      ?? [];
+        $existingAbout = $hero->about_us_card ?? [];
+        $aboutFiles    = $request->file('about_us_card', []);
 
+        if ($request->has('about_us_card')) {
+            $newAbout = [];
+            foreach ($request->input('about_us_card', []) as $i => $card) {
+                $imagePath = $existingAbout[$i]['image'] ?? null;
 
-        $main_video = '';
-        if($request->hasFile('main_video')){
-            $main_video = $request->file('main_video')->store('videos',['disk' => 'public']);
-        }
-        $hero->main_video = $main_video;
-
-        $rowImages = [];
-
-        if ($request->has('row_only_images')) {
-            foreach ($request->row_only_images as $imageData) {
-                if (isset($imageData['url']) && $imageData['url'] instanceof \Illuminate\Http\UploadedFile) {
-                    $path = $imageData['url']->store('public/');
-                    $rowImages[] = [
-                        'url' => Storage::url($path),
-                    ];
+                if (isset($aboutFiles[$i]['image']) && $aboutFiles[$i]['image'] instanceof \Illuminate\Http\UploadedFile) {
+                    $imagePath ='storage/'. $aboutFiles[$i]['image']->store('uploads',['disk' => 'public']);
                 }
-                // If only existing image is present
-                elseif (!empty($imageData['existing_url'])) {
-                    $rowImages[] = [
-                        'url' => $imageData['existing_url'],
-                    ];
-                }
+
+                $newAbout[] = [
+                    'name'        => $card['name']        ?? '',
+                    'position'    => $card['position']    ?? '',
+                    'description' => $card['description'] ?? '',
+                    'image'       => $imagePath,
+                ];
             }
+            $hero->about_us_card = $newAbout;
         }
+
+
+        $existingCases = $hero->case_studies_cards ?? [];
+
+// 2) grab raw inputs and files
+        $inputCases = $request->input('case_studies_cards', []);
+        $fileCases  = $request->file('case_studies_cards', []);
+
+// 3) rebuild the array
+        $newCases = [];
+        foreach ($inputCases as $i => $card) {
+            // start with the old video path (if any)
+            $videoPath = $existingCases[$i]['video'] ?? null;
+
+            // if the user uploaded a new file for this index, store & overwrite
+            if (!empty($fileCases[$i]['video'])) {
+                // store returns e.g. "videos/filename.mp4"
+                $stored = $fileCases[$i]['video']->store('videos', 'public');
+                // Storage::url gives "/storage/videos/filename.mp4"
+                $videoPath = Storage::url($stored);
+            }
+
+            $newCases[] = [
+                'title'       => $card['title']       ?? '',
+                'description' => $card['description'] ?? '',
+                'url'         => $card['url']         ?? '',
+                'video'       => $videoPath,
+            ];
+        }
+
+// 4) assign back & save
+        $hero->case_studies_cards = $newCases;
+
+        if ($request->has('services_list')) {
+            $services = [];
+            foreach ($request->services_list as $i => $item) {
+                // start with the old image path (if any)
+                $imagePath = $existingServices[$i]['image'] ?? null;
+
+                // if the user just uploaded a new one, use that instead
+                if ($request->hasFile("services_list.$i.image")) {
+                    $imagePath = 'storage/'. $request
+                        ->file("services_list.$i.image")
+                        ->store('services', 'public');
+                }
+
+                $services[] = [
+                    'count' => $item['count'] ?? 0,
+                    'title' => $item['title'] ?? '',
+                    'image' => $imagePath,
+                ];
+            }
+            $hero->services_list = $services;
+        }
+
+
+        if ($request->has('process_cards')) {
+            $process = [];
+            foreach ($request->process_cards as $card) {
+                $process[] = [
+                    'count'       => $card['count']       ?? 0,
+                    'name'        => $card['name']        ?? '',
+                    'description' => $card['description'] ?? '',
+                ];
+            }
+            $hero->process_cards = $process;
+        }
+
+
         if ($request->hasFile('process_video')) {
-            $videos = [];
-            foreach ($request->file('process_video') as $videoFile) {
-                $path = $videoFile['url']->store('dataland/videos', 'public');
-                $videos[] = ['url' => 'storage/' . $path];
-            }
-            $model->process_video = $videos;
+
+            $hero->process_video = 'storage/'. $request->file('process_video')->store('videos',  ['disk'=>'public']);
+
         }
+
+        if ($request->hasFile('main_video')) {
+            $hero->main_video = 'storage/'. $request
+                ->file('main_video')
+                ->store('videos', ['disk'=>'public']);
+        }
+
+
 
         $hero->save();
 
-        return back()->with('success', 'Hero section saved successfully!');
+        return back()->with('success', 'DataLand Section saved successfully!');
+    }
+
+    public function indexImage()
+    {
+        $images = DataLandCrouselImage::latest()->paginate(10);;
+        return view('admin.dataland-work-images',compact('images'));
+    }
+
+
+    public function storeImage(Request $request)
+    {
+        $imageEntry = $request->id ? DataLandCrouselImage::findOrFail($request->id) : new DataLandCrouselImage();
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->store('uploads', ['disk' => 'public']);
+            $imageEntry->image = 'storage/'. $image;
+        }
+
+        $imageEntry->save();
+
+        return redirect()->back()->with('success', $request->id ? 'Image updated successfully!' : 'Image saved successfully!');
+    }
+
+    public function destroyImage($id)
+    {
+        $image = DataLandCrouselImage::findOrFail($id);
+
+        if ($image->image && \Storage::disk('public')->exists($image->image)) {
+            \Storage::disk('public')->delete($image->image);
+        }
+
+        $image->delete();
+
+        return redirect()->back()->with('success', 'Image deleted successfully!');
     }
 }

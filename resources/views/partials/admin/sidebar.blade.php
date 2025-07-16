@@ -65,6 +65,14 @@
                                     <span class="menu-title">Dataland</span>
                                 </a>
 
+                        <a class="menu-link {{ request()->routeIs('admin.dataland.image*') ? 'active' : '' }}"
+                                   href="{{ route('admin.dataland.image') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                    <span class="menu-title">Dataland Crousel Image</span>
+                                </a>
+
 
 
 

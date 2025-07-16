@@ -46,4 +46,11 @@ Route::group(['prefix'=>'admin'], function () {
         Route::delete('hero-image/delete/{id}', [\App\Http\Controllers\Admin\HeroMainController::class, 'destroyImage'])->name('admin.heromain.image.delete');
 
     });
+
+    Route::group(['prefix' => 'dataland-work-crousel-images'], function () {
+        Route::get('/', [App\Http\Controllers\Admin\DataLandController::class, 'indexImage'])->name('admin.dataland.image');
+        Route::post('/store', [App\Http\Controllers\Admin\DataLandController::class, 'storeImage'])->name('admin.dataland.image.store');
+        Route::delete('hero-image/delete/{id}', [\App\Http\Controllers\Admin\DataLandController::class, 'destroyImage'])->name('admin.dataland.image.delete');
+
+    });
 });

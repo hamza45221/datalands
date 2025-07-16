@@ -16048,7 +16048,7 @@
                                  data-framer-component-type="RichTextContainer">
                                 <p class="framer-text framer-styles-preset-10erd1a" data-styles-preset="yVMxki16r"
                                    style="--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-FrASgcrqe-nsCX04IBs))">
-                                    Process</p>
+                                   {{ $dataland->process_title }}</p>
                             </div>
                         </div>
                     </div>
@@ -16072,7 +16072,7 @@
                                  data-framer-component-type="RichTextContainer">
                                 <p class="framer-text framer-styles-preset-10erd1a" data-styles-preset="yVMxki16r"
                                    style="--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-FrASgcrqe-nsCX04IBs))">
-                                    Process</p>
+                                    {{ $dataland->process_title }}</p>
                             </div>
                         </div>
                     </div>
@@ -16096,7 +16096,7 @@
                                  data-framer-component-type="RichTextContainer">
                                 <p class="framer-text framer-styles-preset-10erd1a" data-styles-preset="yVMxki16r"
                                    style="--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-FrASgcrqe-nsCX04IBs))">
-                                    Process</p>
+                                    {{ $dataland->process_title }}</p>
                             </div>
                         </div>
                     </div>
@@ -16104,21 +16104,21 @@
             </div>
             <div class="framer-7ze1hq" data-framer-name="VISUAL" name="VISUAL">
                 <div class="framer-q2ugfr-container hidden-72rtr7 hidden-3v2uua hidden-7gi421"><video
-                        src="dataland/assets/cAfXkww6hB2YYXbFNmeZmMWv80.mp4" loop="" muted="" playsinline=""
+                        src="{{ asset($dataland->process_video) }}" loop="" muted="" playsinline=""
                         style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
                 </div>
                 <div class="framer-1q0cjsa-container hidden-3v2uua hidden-qs7kru">
-                    <div class="ssr-variant hidden-7gi421"><video src="assets/cAfXkww6hB2YYXbFNmeZmMWv80.mp4"
+                    <div class="ssr-variant hidden-7gi421"><video src="{{ asset($dataland->process_video) }}"
                                                                   loop="" muted="" playsinline=""
                                                                   style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
                     </div>
                     <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7"><video
-                            src="dataland/assets/cAfXkww6hB2YYXbFNmeZmMWv80.mp4" loop="" muted="" playsinline=""
+                            src="{{ asset($dataland->process_video) }}" loop="" muted="" playsinline=""
                             style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:contain;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
                     </div>
                 </div>
                 <div class="framer-6twcid-container hidden-72rtr7 hidden-7gi421 hidden-qs7kru"><video
-                        src="dataland/assets/cAfXkww6hB2YYXbFNmeZmMWv80.mp4" loop="" muted="" playsinline=""
+                        src="{{ asset($dataland->process_video) }}" loop="" muted="" playsinline=""
                         style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
                 </div>
             </div>
@@ -16128,614 +16128,64 @@
                         <div class="framer-gpouyx"
                              style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;transform:none"
                              data-framer-component-type="RichTextContainer">
-                            <h4 class="framer-text framer-styles-preset-dldat8" data-styles-preset="ZBamfng0Y">Big
-                                vibes, small core.</h4>
+                            <h4 class="framer-text framer-styles-preset-dldat8" data-styles-preset="ZBamfng0Y">
+                                {{ $dataland->process_heading }}</h4>
                         </div>
                     </div>
                     <div class="ssr-variant hidden-7gi421 hidden-3v2uua hidden-72rtr7">
                         <div class="framer-gpouyx"
                              style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;transform:none"
                              data-framer-component-type="RichTextContainer">
-                            <h4 class="framer-text framer-styles-preset-dldat8" data-styles-preset="ZBamfng0Y">A
-                                creative studio from <br class="framer-text">the mythical Lands of Data.</h4>
+                            <h4 class="framer-text framer-styles-preset-dldat8" data-styles-preset="ZBamfng0Y">
+                                {!! $dataland->process_heading2 !!}
+                            </h4>
                         </div>
                     </div>
                 </div>
                 <div class="framer-1phqgvb" data-framer-name="Rows" name="Rows">
                     <div class="framer-1sl7ox6" data-border="true" data-framer-name="Row 1" name="Row 1">
-                        <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                            <div class="framer-ja3o0r-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1p77n88"
-                                     data-framer-name="Variant 1" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">1</p>
+
+                        @foreach($dataland->process_cards as $card)
+                            <div class="ssr-variant">
+                                <div class="framer-ja3o0r-container">
+                                    <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1p77n88"
+                                         data-framer-name="Variant {{ $loop->iteration }}"
+                                         style="width:100%" tabindex="0">
+
+                                        <!-- Number -->
+                                        <div class="framer-gj4p4z" data-framer-name="HEAD">
+                                            <div class="framer-1elh4b4" data-framer-name="Num"
+                                                 style="display:flex;flex-direction:column;justify-content:flex-start;">
+                                                <p class="framer-text framer-styles-preset-9ebbf9">
+                                                    {{ $card['count'] }}
+                                                </p>
+                                            </div>
+
+                                            <!-- Title -->
+                                            <div class="framer-15xtept" data-framer-name="Title"
+                                                 style="display:flex;flex-direction:column;justify-content:flex-start;">
+                                                <p class="framer-text framer-styles-preset-9ebbf9">
+                                                    {{ $card['name'] }}
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">PLANNING</p>
+
+                                        <!-- Description -->
+                                        <div class="framer-15vhv8k" data-framer-name="TEXT">
+                                            <div class="framer-1ba3jnz" data-framer-name="Text"
+                                                 style="display:flex;flex-direction:column;justify-content:flex-start;">
+                                                <p class="framer-text framer-styles-preset-7kw3ld">
+                                                    {{ $card['description'] }}
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">During the pre-project planning
-                                                phase, we take the time to learn all about a prospective client and
-                                                to prepare a detailed workback schedule which lays out a complete
-                                                roadmap of our project.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                            <div class="framer-ja3o0r-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1m2mi59"
-                                     data-framer-name="Mobile" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">1</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">PLANNING</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">During the pre-project planning
-                                                phase, we take the time to learn all about a prospective client and
-                                                to prepare a detailed workback schedule which lays out a complete
-                                                roadmap of our project.</p>
-                                        </div>
-                                        <div class="framer-1hy393c"></div>
+
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                            <div class="framer-ja3o0r-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-14wu61r"
-                                     data-framer-name="Tablet" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">1</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">PLANNING</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">During the pre-project planning
-                                                phase, we take the time to learn all about a prospective client and
-                                                to prepare a detailed workback schedule which lays out a complete
-                                                roadmap of our project.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                            <div class="framer-89zh4k-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1p77n88"
-                                     data-framer-name="Variant 1" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">2</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">DISCOVERY</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">In this first phase of the project,
-                                                we perform a visual audit of the client’s current and past visual
-                                                design work, and reflect on how these elements connect. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                            <div class="framer-89zh4k-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1m2mi59"
-                                     data-framer-name="Mobile" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">2</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">DISCOVERY</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">In this first phase of the project,
-                                                we perform a visual audit of the client’s current and past visual
-                                                design work, and reflect on how these elements connect. </p>
-                                        </div>
-                                        <div class="framer-1hy393c"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                            <div class="framer-89zh4k-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-14wu61r"
-                                     data-framer-name="Tablet" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">2</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">DISCOVERY</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">In this first phase of the project,
-                                                we perform a visual audit of the client’s current and past visual
-                                                design work, and reflect on how these elements connect. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="framer-kg2z14" data-border="true" data-framer-name="Row 2" name="Row 2">
-                        <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                            <div class="framer-13jdxa4-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1p77n88"
-                                     data-framer-name="Variant 1" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">3</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">MOODBOARDING</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">Next, we research external visual
-                                                design references and pull together a moodboard to better explain
-                                                our vision for the project, and to align with stakeholders on style
-                                                preferences.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                            <div class="framer-13jdxa4-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1m2mi59"
-                                     data-framer-name="Mobile" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">3</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">MOODBOARDING</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">Next, we research external visual
-                                                design references and pull together a moodboard to better explain
-                                                our vision for the project, and to align with stakeholders on style
-                                                preferences.</p>
-                                        </div>
-                                        <div class="framer-1hy393c"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                            <div class="framer-13jdxa4-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-14wu61r"
-                                     data-framer-name="Tablet" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">3</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">MOODBOARDING</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">Next, we research external visual
-                                                design references and pull together a moodboard to better explain
-                                                our vision for the project, and to align with stakeholders on style
-                                                preferences.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                            <div class="framer-1okvq9h-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1p77n88"
-                                     data-framer-name="Variant 1" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">4</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">DESIGN + REFINE</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">After style approval (or
-                                                consolidation of several style references), we get to work. In this
-                                                phase, we design with your brand in mind, pulling from our years of
-                                                experience in design and create work that is fresh, exciting and
-                                                brand new. This phase includes 3 distinct sketch options and 2
-                                                rounds of revisions.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                            <div class="framer-1okvq9h-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1m2mi59"
-                                     data-framer-name="Mobile" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">4</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">DESIGN + REFINE</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">After style approval (or
-                                                consolidation of several style references), we get to work. In this
-                                                phase, we design with your brand in mind, pulling from our years of
-                                                experience in design and create work that is fresh, exciting and
-                                                brand new. This phase includes 3 distinct sketch options and 2
-                                                rounds of revisions.</p>
-                                        </div>
-                                        <div class="framer-1hy393c"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                            <div class="framer-1okvq9h-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-14wu61r"
-                                     data-framer-name="Tablet" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">4</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">DESIGN + REFINE</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">After style approval (or
-                                                consolidation of several style references), we get to work. In this
-                                                phase, we design with your brand in mind, pulling from our years of
-                                                experience in design and create work that is fresh, exciting and
-                                                brand new. This phase includes 3 distinct sketch options and 2
-                                                rounds of revisions.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="framer-ik2eey" data-border="true" data-framer-name="Row 3" name="Row 3">
-                        <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                            <div class="framer-5qkpne-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1p77n88"
-                                     data-framer-name="Variant 1" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">5</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">HANDOFF</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">Once the final style is approved and
-                                                work begins to wrap up, we prepare the final deliverables for
-                                                delivery. All files are handed over in the manner as described in
-                                                client’s customized SOW, and we also offer a detailed offboarding
-                                                document if requested. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                            <div class="framer-5qkpne-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1m2mi59"
-                                     data-framer-name="Mobile" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">5</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">HANDOFF</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">Once the final style is approved and
-                                                work begins to wrap up, we prepare the final deliverables for
-                                                delivery. All files are handed over in the manner as described in
-                                                client’s customized SOW, and we also offer a detailed offboarding
-                                                document if requested. </p>
-                                        </div>
-                                        <div class="framer-1hy393c"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                            <div class="framer-5qkpne-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-14wu61r"
-                                     data-framer-name="Tablet" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">5</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">HANDOFF</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">Once the final style is approved and
-                                                work begins to wrap up, we prepare the final deliverables for
-                                                delivery. All files are handed over in the manner as described in
-                                                client’s customized SOW, and we also offer a detailed offboarding
-                                                document if requested. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                            <div class="framer-5rfp8d-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1p77n88"
-                                     data-framer-name="Variant 1" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">6</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">SUPPORT</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">We are always happy to offer retainer
-                                                services, if ongoing design support is needed. Rates for this work
-                                                are flexible, and we’re happy to create a plan that works for all
-                                                parties, and is highly competitive with the big agencies. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                            <div class="framer-5rfp8d-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-1m2mi59"
-                                     data-framer-name="Mobile" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">6</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">SUPPORT</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">We are always happy to offer retainer
-                                                services, if ongoing design support is needed. Rates for this work
-                                                are flexible, and we’re happy to create a plan that works for all
-                                                parties, and is highly competitive with the big agencies. </p>
-                                        </div>
-                                        <div class="framer-1hy393c"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                            <div class="framer-5rfp8d-container">
-                                <div class="framer-CW9GC framer-Iggn9 framer-zlDCj framer-1p77n88 framer-v-14wu61r"
-                                     data-framer-name="Tablet" style="width:100%" tabindex="0">
-                                    <div class="framer-gj4p4z" data-framer-name="HEAD">
-                                        <div class="framer-1elh4b4" data-framer-name="Num"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">6</p>
-                                        </div>
-                                        <div class="framer-15xtept" data-framer-name="Title"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-9ebbf9"
-                                               data-styles-preset="XXW7z6iRw">SUPPORT</p>
-                                        </div>
-                                    </div>
-                                    <div class="framer-15vhv8k" data-framer-name="TEXT">
-                                        <div class="framer-1ba3jnz" data-framer-name="Text"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-7kw3ld"
-                                               data-styles-preset="K40Y92M_4">We are always happy to offer retainer
-                                                services, if ongoing design support is needed. Rates for this work
-                                                are flexible, and we’re happy to create a plan that works for all
-                                                parties, and is highly competitive with the big agencies. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        @endforeach
+
+
                 </div>
             </div>
         </div>
@@ -16760,7 +16210,7 @@
                                  data-framer-component-type="RichTextContainer">
                                 <p class="framer-text framer-styles-preset-10erd1a" data-styles-preset="yVMxki16r"
                                    style="--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-FrASgcrqe-nsCX04IBs))">
-                                    Newsletter</p>
+                                    {{ $dataland->news_latter_title }}</p>
                             </div>
                         </div>
                     </div>
@@ -16784,7 +16234,7 @@
                                  data-framer-component-type="RichTextContainer">
                                 <p class="framer-text framer-styles-preset-10erd1a" data-styles-preset="yVMxki16r"
                                    style="--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-FrASgcrqe-nsCX04IBs))">
-                                    Newsletter</p>
+                                    {{ $dataland->news_latter_title }}</p>
                             </div>
                         </div>
                     </div>
@@ -16808,7 +16258,7 @@
                                  data-framer-component-type="RichTextContainer">
                                 <p class="framer-text framer-styles-preset-10erd1a" data-styles-preset="yVMxki16r"
                                    style="--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-FrASgcrqe-nsCX04IBs))">
-                                    Newsletter</p>
+                                    {{ $dataland->news_latter_title }}</p>
                             </div>
                         </div>
                     </div>
@@ -16820,15 +16270,14 @@
                      data-framer-component-type="RichTextContainer">
                     <p class="framer-text framer-styles-preset-7kw3ld" data-styles-preset="K40Y92M_4"
                        style="--framer-text-alignment:left;--framer-text-color:var(--token-0c906f90-a26c-424a-b845-7c5f33f0a3eb, rgb(217, 217, 217))">
-                        Sign up for our extremely infrequent newsletter!</p>
+                        {{ $dataland->news_latter_heading }}</p>
                 </div>
                 <div class="framer-j3cidv"
                      style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;transform:none"
                      data-framer-component-type="RichTextContainer">
                     <p class="framer-text framer-styles-preset-63ckt7" data-styles-preset="Arz7WxDDM"
                        style="--framer-text-alignment:left;--framer-text-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255))">
-                        Our newsletter is the best way to keep up with our latest work, and our latest clothing
-                        drops. you can expect 3-6 emails per year.</p>
+                        {!! $dataland->news_latter_desc !!}</p>
                 </div>
             </div>
             <div class="framer-1in1jg6" data-framer-name="Content" name="Content">
@@ -16942,81 +16391,7 @@
                                class="framer-text">Datalands</p>
                         </foreignobject>
                     </svg>
-                    <div class="framer-1hotl93" data-framer-name="SOCIAL"><!--$-->
-                        <div class="framer-deul6n-container"><!--$--><a
-                                class="framer-QSmH6 framer-QRi35 framer-Iggn9 framer-17cmpp7 framer-v-17cmpp7 framer-ked2fs"
-                                data-border="true" data-framer-name="Circle"
-                                style="--border-bottom-width:2px;--border-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--border-left-width:2px;--border-right-width:2px;--border-style:solid;--border-top-width:2px;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:300px;border-bottom-right-radius:300px;border-top-left-radius:300px;border-top-right-radius:300px;width:100%"
-                                href="https://instagram.com/datalands" target="_blank" rel="noopener" tabindex="0">
-                                <div class="framer-11ts9ks">
-                                    <div class="framer-ws4vgg">
-                                        <div class="framer-5nmpj1"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-18v92ny"
-                                               data-styles-preset="PCUpq0UFw"
-                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                                IG</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="framer-aeh4ay"
-                                     style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none"
-                                     data-framer-component-type="RichTextContainer">
-                                    <p style="--font-selector:Q1VTVE9NO01hcnRpYW4gTW9ubyBTZW1pQ29uZGVuc2VkIEV4dHJhTGlnaHQ=;--framer-font-family:&quot;Martian Mono SemiCondensed ExtraLight&quot;, &quot;Martian Mono SemiCondensed ExtraLight Placeholder&quot;, monospace;--framer-font-size:12px;--framer-letter-spacing:0.08em;--framer-line-height:1.25em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)));--framer-text-transform:uppercase"
-                                       class="framer-text">@datalands</p>
-                                </div>
-                            </a><!--/$--></div><!--/$-->
-                        <div class="framer-1m835m3-container"><!--$--><a
-                                class="framer-QSmH6 framer-QRi35 framer-Iggn9 framer-17cmpp7 framer-v-18fusu9 framer-ked2fs"
-                                data-border="true" data-framer-name="Square"
-                                style="--border-bottom-width:2px;--border-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--border-left-width:2px;--border-right-width:2px;--border-style:solid;--border-top-width:2px;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px;width:100%"
-                                href="https://twitter.com/wearedatalands" target="_blank" rel="noopener"
-                                tabindex="0">
-                                <div class="framer-11ts9ks">
-                                    <div class="framer-ws4vgg">
-                                        <div class="framer-5nmpj1"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-18v92ny"
-                                               data-styles-preset="PCUpq0UFw"
-                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                                TW</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="framer-aeh4ay"
-                                     style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none"
-                                     data-framer-component-type="RichTextContainer">
-                                    <p style="--font-selector:Q1VTVE9NO01hcnRpYW4gTW9ubyBTZW1pQ29uZGVuc2VkIEV4dHJhTGlnaHQ=;--framer-font-family:&quot;Martian Mono SemiCondensed ExtraLight&quot;, &quot;Martian Mono SemiCondensed ExtraLight Placeholder&quot;, monospace;--framer-font-size:12px;--framer-letter-spacing:0.08em;--framer-line-height:1.25em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)));--framer-text-transform:uppercase"
-                                       class="framer-text">@wearedatalands</p>
-                                </div>
-                            </a><!--/$--></div>
-                        <div class="framer-1m8p2ot-container"><!--$--><a
-                                class="framer-QSmH6 framer-QRi35 framer-Iggn9 framer-17cmpp7 framer-v-17cmpp7 framer-ked2fs"
-                                data-border="true" data-framer-name="Circle"
-                                style="--border-bottom-width:2px;--border-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--border-left-width:2px;--border-right-width:2px;--border-style:solid;--border-top-width:2px;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:300px;border-bottom-right-radius:300px;border-top-left-radius:300px;border-top-right-radius:300px;width:100%"
-                                href="https://behance.net/datalands" target="_blank" rel="noopener" tabindex="0">
-                                <div class="framer-11ts9ks">
-                                    <div class="framer-ws4vgg">
-                                        <div class="framer-5nmpj1"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-18v92ny"
-                                               data-styles-preset="PCUpq0UFw"
-                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                                BE</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="framer-aeh4ay"
-                                     style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none"
-                                     data-framer-component-type="RichTextContainer">
-                                    <p style="--font-selector:Q1VTVE9NO01hcnRpYW4gTW9ubyBTZW1pQ29uZGVuc2VkIEV4dHJhTGlnaHQ=;--framer-font-family:&quot;Martian Mono SemiCondensed ExtraLight&quot;, &quot;Martian Mono SemiCondensed ExtraLight Placeholder&quot;, monospace;--framer-font-size:12px;--framer-letter-spacing:0.08em;--framer-line-height:1.25em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)));--framer-text-transform:uppercase"
-                                       class="framer-text">/datalands</p>
-                                </div>
-                            </a><!--/$--></div>
-                    </div>
+
                     <div class="framer-121r83o" data-framer-name="Contact">
                         <div class="framer-1xm7pyg" data-framer-name="Contact-Box">
                             <div class="framer-13n1x8x" data-framer-name="Contact-Part">
@@ -17029,13 +16404,13 @@
                                                  style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;--extracted-r6o4lv:var(--variable-reference-ElhnrKOY8-Iytzg4y6q);--variable-reference-ElhnrKOY8-Iytzg4y6q:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--variable-reference-MZ2Epyfww-Iytzg4y6q:rgb(255, 255, 255);transform:none"
                                                  data-framer-component-type="RichTextContainer">
                                                 <p style="--font-selector:Q1VTVE9NO0Jhc2lzIEdyb3Rlc3F1ZSBQcm8gUmVndWxhcg==;--framer-font-family:&quot;Basis Grotesque Pro Regular&quot;, &quot;Basis Grotesque Pro Regular Placeholder&quot;, sans-serif;--framer-font-size:80px;--framer-letter-spacing:-0.2px;--framer-line-height:1em;--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-ElhnrKOY8-Iytzg4y6q))"
-                                                   class="framer-text">New Business</p>
+                                                   class="framer-text">{{ $dataland->footer_title }}</p>
                                             </div>
                                             <div class="framer-16npkx7" data-framer-name="Data Visualization"
                                                  style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;--extracted-r6o4lv:var(--variable-reference-ElhnrKOY8-Iytzg4y6q);--variable-reference-ElhnrKOY8-Iytzg4y6q:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--variable-reference-MZ2Epyfww-Iytzg4y6q:rgb(255, 255, 255);transform:none"
                                                  data-framer-component-type="RichTextContainer">
                                                 <p style="--font-selector:Q1VTVE9NO0Jhc2lzIEdyb3Rlc3F1ZSBQcm8gUmVndWxhcg==;--framer-font-family:&quot;Basis Grotesque Pro Regular&quot;, &quot;Basis Grotesque Pro Regular Placeholder&quot;, sans-serif;--framer-font-size:80px;--framer-letter-spacing:-0.2px;--framer-line-height:1em;--framer-text-alignment:right;--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-ElhnrKOY8-Iytzg4y6q))"
-                                                   class="framer-text">hi@datalands.co</p>
+                                                   class="framer-text">{{ $dataland->footer_email }}</p>
                                             </div>
                                         </div>
                                         <div class="framer-ack39s" data-framer-name="Color Frame"
@@ -17051,7 +16426,7 @@
                                         <p class="framer-text framer-styles-preset-10erd1a"
                                            data-styles-preset="yVMxki16r"
                                            style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                            ©2019-24 Datalands™ | Lands of Data® LLC</p>
+                                            {{ $dataland->footer_detail }}</p>
                                     </div>
                                 </div>
                                 <div class="framer-g4579x" data-framer-name="Socials">
@@ -17064,8 +16439,8 @@
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
                                                 <!--$--><a class="framer-text framer-styles-preset-112mw6g"
                                                            data-styles-preset="FG5t4ckx5"
-                                                           href="https://instagram.com/datalands" target="_blank"
-                                                           rel="noopener">IG,</a><!--/$-->
+                                                           href="{{ $dataland->insta_url }}" target="_blank"
+                                                           rel="noopener">{{ $dataland->insta_name }},</a><!--/$-->
                                             </p>
                                         </div>
                                         <div class="framer-1nonhy2" data-framer-name="TW"
@@ -17077,7 +16452,7 @@
                                                 <!--$--><a class="framer-text framer-styles-preset-112mw6g"
                                                            data-styles-preset="FG5t4ckx5"
                                                            href="https://twitter.com/wearedatalands" target="_blank"
-                                                           rel="noopener">TW,</a><!--/$-->
+                                                           rel="noopener">{{ $dataland->twitter_title }},</a><!--/$-->
                                             </p>
                                         </div>
                                         <div class="framer-1xhchkh" data-framer-name="BE"
@@ -17088,8 +16463,8 @@
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
                                                 <!--$--><a class="framer-text framer-styles-preset-112mw6g"
                                                            data-styles-preset="FG5t4ckx5"
-                                                           href="https://behance.net/datalands" target="_blank"
-                                                           rel="noopener">BE,</a><!--/$-->
+                                                           href="{{ $dataland->behance_url }}" target="_blank"
+                                                           rel="noopener">{{ $dataland->behance_name }},</a><!--/$-->
                                             </p>
                                         </div>
                                     </div>
@@ -17103,7 +16478,7 @@
                                            style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
                                             hi<!--$--><a class="framer-text"
                                                          href="mailto:Gavin%20Potenza%20%3Cgavin%40datalands.co%3E"
-                                                         rel="noopener">@datalands.co</a><!--/$--></p>
+                                                         rel="noopener">{{ $dataland->footer_email }}</a><!--/$--></p>
                                     </div>
                                 </div>
                             </div>
@@ -17121,7 +16496,7 @@
                         <foreignobject width="100%" height="100%" class="framer-fit-text" transform="scale(1)"
                                        style="overflow:visible;transform-origin:center center">
                             <p style="--font-selector:Q1VTVE9NO09aSUsgQmxhY2s=;--framer-font-family:&quot;OZIK Black&quot;, &quot;OZIK Black Placeholder&quot;, sans-serif;--framer-font-size:357.579px;--framer-letter-spacing:-0.01em;--framer-line-height:0.83em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))"
-                               class="framer-text">Datalands</p>
+                               class="framer-text">{{ $dataland->main_heading }}</p>
                         </foreignobject>
                     </svg>
                     <div class="framer-1hotl93" data-framer-name="SOCIAL"><!--$-->
@@ -17129,7 +16504,7 @@
                                 class="framer-QSmH6 framer-QRi35 framer-Iggn9 framer-17cmpp7 framer-v-18da9ja framer-ked2fs"
                                 data-border="true" data-framer-name="Mobile"
                                 style="--border-bottom-width:1px;--border-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--border-left-width:1px;--border-right-width:1px;--border-style:solid;--border-top-width:1px;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:300px;border-bottom-right-radius:300px;border-top-left-radius:300px;border-top-right-radius:300px;width:100%"
-                                href="https://instagram.com/datalands" target="_blank" rel="noopener" tabindex="0">
+                                href="{{ $dataland->insta_url }}" target="_blank" rel="noopener" tabindex="0">
                                 <div class="framer-11ts9ks">
                                     <div class="framer-ws4vgg">
                                         <div class="framer-5nmpj1"
@@ -17138,7 +16513,7 @@
                                             <p class="framer-text framer-styles-preset-18v92ny"
                                                data-styles-preset="PCUpq0UFw"
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                                IG</p>
+                                                {{ $dataland->insta_name }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -17147,7 +16522,7 @@
                                 class="framer-QSmH6 framer-QRi35 framer-Iggn9 framer-17cmpp7 framer-v-18da9ja framer-ked2fs"
                                 data-border="true" data-framer-name="Mobile"
                                 style="--border-bottom-width:1px;--border-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--border-left-width:1px;--border-right-width:1px;--border-style:solid;--border-top-width:1px;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:300px;border-bottom-right-radius:300px;border-top-left-radius:300px;border-top-right-radius:300px;width:100%"
-                                href="https://twitter.com/wearedatalands" target="_blank" rel="noopener"
+                                href="{{ $dataland->twitter_url }}" target="_blank" rel="noopener"
                                 tabindex="0">
                                 <div class="framer-11ts9ks">
                                     <div class="framer-ws4vgg">
@@ -17157,7 +16532,7 @@
                                             <p class="framer-text framer-styles-preset-18v92ny"
                                                data-styles-preset="PCUpq0UFw"
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                                TW</p>
+                                                {{ $dataland->twitter_name }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -17166,7 +16541,7 @@
                                 class="framer-QSmH6 framer-QRi35 framer-Iggn9 framer-17cmpp7 framer-v-18da9ja framer-ked2fs"
                                 data-border="true" data-framer-name="Mobile"
                                 style="--border-bottom-width:1px;--border-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--border-left-width:1px;--border-right-width:1px;--border-style:solid;--border-top-width:1px;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:300px;border-bottom-right-radius:300px;border-top-left-radius:300px;border-top-right-radius:300px;width:100%"
-                                href="https://behance.net/datalands" target="_blank" rel="noopener" tabindex="0">
+                                href="{{ $dataland->behance_url }}" target="_blank" rel="noopener" tabindex="0">
                                 <div class="framer-11ts9ks">
                                     <div class="framer-ws4vgg">
                                         <div class="framer-5nmpj1"
@@ -17175,7 +16550,7 @@
                                             <p class="framer-text framer-styles-preset-18v92ny"
                                                data-styles-preset="PCUpq0UFw"
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                                BE</p>
+                                                {{ $dataland->behance_name }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -17193,13 +16568,13 @@
                                                  style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;--extracted-r6o4lv:var(--variable-reference-ElhnrKOY8-Iytzg4y6q);--variable-reference-ElhnrKOY8-Iytzg4y6q:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--variable-reference-MZ2Epyfww-Iytzg4y6q:rgb(255, 255, 255);transform:none"
                                                  data-framer-component-type="RichTextContainer">
                                                 <p style="--font-selector:Q1VTVE9NO0Jhc2lzIEdyb3Rlc3F1ZSBQcm8gUmVndWxhcg==;--framer-font-family:&quot;Basis Grotesque Pro Regular&quot;, &quot;Basis Grotesque Pro Regular Placeholder&quot;, sans-serif;--framer-font-size:27px;--framer-letter-spacing:-0.2px;--framer-line-height:1em;--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-ElhnrKOY8-Iytzg4y6q))"
-                                                   class="framer-text">New Business</p>
+                                                   class="framer-text">{{ $dataland->footer_title }}</p>
                                             </div>
                                             <div class="framer-16npkx7" data-framer-name="Data Visualization"
                                                  style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;--extracted-r6o4lv:var(--variable-reference-ElhnrKOY8-Iytzg4y6q);--variable-reference-ElhnrKOY8-Iytzg4y6q:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--variable-reference-MZ2Epyfww-Iytzg4y6q:rgb(255, 255, 255);transform:none"
                                                  data-framer-component-type="RichTextContainer">
                                                 <p style="--font-selector:Q1VTVE9NO0Jhc2lzIEdyb3Rlc3F1ZSBQcm8gUmVndWxhcg==;--framer-font-family:&quot;Basis Grotesque Pro Regular&quot;, &quot;Basis Grotesque Pro Regular Placeholder&quot;, sans-serif;--framer-font-size:27px;--framer-letter-spacing:-0.2px;--framer-line-height:1em;--framer-text-alignment:right;--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-ElhnrKOY8-Iytzg4y6q))"
-                                                   class="framer-text">hi@datalands.co</p>
+                                                   class="framer-text">{{ $dataland->footer_email }}</p>
                                             </div>
                                         </div>
                                         <div class="framer-ack39s" data-framer-name="Color Frame"
@@ -17213,7 +16588,7 @@
                                          style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;--extracted-r6o4lv:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));transform:none"
                                          data-framer-component-type="RichTextContainer">
                                         <p style="--font-selector:Q1VTVE9NO01hcnRpYW4gTW9ubyBFeHRyYUxpZ2h0;--framer-font-family:&quot;Martian Mono ExtraLight&quot;, &quot;Martian Mono ExtraLight Placeholder&quot;, monospace;--framer-font-size:10.5px;--framer-letter-spacing:0.02em;--framer-line-height:1.25em;--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)));--framer-text-transform:uppercase"
-                                           class="framer-text">©2019-24 Datalands™ | Lands of Data® LLC</p>
+                                           class="framer-text">{{ $dataland->footer_detail }}</p>
                                     </div>
                                 </div>
                                 <div class="framer-g4579x" data-framer-name="Socials"></div>
@@ -17224,7 +16599,7 @@
                                         <p style="--font-selector:Q1VTVE9NO01hcnRpYW4gTW9ubyBFeHRyYUxpZ2h0;--framer-font-family:&quot;Martian Mono ExtraLight&quot;, &quot;Martian Mono ExtraLight Placeholder&quot;, monospace;--framer-font-size:10.5px;--framer-letter-spacing:0.02em;--framer-line-height:1.25em;--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)));--framer-text-transform:uppercase"
                                            class="framer-text">hi<!--$--><a class="framer-text"
                                                                             href="mailto:Gavin%20Potenza%20%3Cgavin%40datalands.co%3E"
-                                                                            rel="noopener">@datalands.co</a><!--/$--></p>
+                                                                            rel="noopener">{{ $dataland->footer_email }}</a><!--/$--></p>
                                     </div>
                                 </div>
                             </div>
@@ -17242,7 +16617,7 @@
                         <foreignobject width="100%" height="100%" class="framer-fit-text" transform="scale(1)"
                                        style="overflow:visible;transform-origin:center center">
                             <p style="--font-selector:Q1VTVE9NO09aSUsgQmxhY2s=;--framer-font-family:&quot;OZIK Black&quot;, &quot;OZIK Black Placeholder&quot;, sans-serif;--framer-font-size:357.579px;--framer-letter-spacing:-0.01em;--framer-line-height:0.83em;--framer-text-alignment:left;--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))"
-                               class="framer-text">Datalands</p>
+                               class="framer-text">{{ $dataland->main_heading }}</p>
                         </foreignobject>
                     </svg>
                     <div class="framer-1hotl93" data-framer-name="SOCIAL"><!--$-->
@@ -17250,7 +16625,7 @@
                                 class="framer-QSmH6 framer-QRi35 framer-Iggn9 framer-17cmpp7 framer-v-r1i7z2 framer-ked2fs"
                                 data-border="true" data-framer-name="Tablet"
                                 style="--border-bottom-width:2px;--border-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--border-left-width:2px;--border-right-width:2px;--border-style:solid;--border-top-width:2px;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:300px;border-bottom-right-radius:300px;border-top-left-radius:300px;border-top-right-radius:300px;width:100%"
-                                href="https://instagram.com/datalands" target="_blank" rel="noopener" tabindex="0">
+                                href="{{ $dataland->insta_url }}" target="_blank" rel="noopener" tabindex="0">
                                 <div class="framer-11ts9ks">
                                     <div class="framer-ws4vgg">
                                         <div class="framer-5nmpj1"
@@ -17259,7 +16634,7 @@
                                             <p class="framer-text framer-styles-preset-18v92ny"
                                                data-styles-preset="PCUpq0UFw"
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                                IG</p>
+                                                {{ $dataland->insta_name }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -17268,7 +16643,7 @@
                                 class="framer-QSmH6 framer-QRi35 framer-Iggn9 framer-17cmpp7 framer-v-r1i7z2 framer-ked2fs"
                                 data-border="true" data-framer-name="Tablet"
                                 style="--border-bottom-width:2px;--border-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--border-left-width:2px;--border-right-width:2px;--border-style:solid;--border-top-width:2px;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:300px;border-bottom-right-radius:300px;border-top-left-radius:300px;border-top-right-radius:300px;width:100%"
-                                href="https://twitter.com/wearedatalands" target="_blank" rel="noopener"
+                                href="$dataland->twitter_url }}" target="_blank" rel="noopener"
                                 tabindex="0">
                                 <div class="framer-11ts9ks">
                                     <div class="framer-ws4vgg">
@@ -17278,7 +16653,7 @@
                                             <p class="framer-text framer-styles-preset-18v92ny"
                                                data-styles-preset="PCUpq0UFw"
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                                TW</p>
+                                                {{ $dataland->twitter_name }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -17287,7 +16662,7 @@
                                 class="framer-QSmH6 framer-QRi35 framer-Iggn9 framer-17cmpp7 framer-v-r1i7z2 framer-ked2fs"
                                 data-border="true" data-framer-name="Tablet"
                                 style="--border-bottom-width:2px;--border-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--border-left-width:2px;--border-right-width:2px;--border-style:solid;--border-top-width:2px;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:300px;border-bottom-right-radius:300px;border-top-left-radius:300px;border-top-right-radius:300px;width:100%"
-                                href="https://behance.net/datalands" target="_blank" rel="noopener" tabindex="0">
+                                href="{{ $dataland->behance_url }}" target="_blank" rel="noopener" tabindex="0">
                                 <div class="framer-11ts9ks">
                                     <div class="framer-ws4vgg">
                                         <div class="framer-5nmpj1"
@@ -17296,7 +16671,7 @@
                                             <p class="framer-text framer-styles-preset-18v92ny"
                                                data-styles-preset="PCUpq0UFw"
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                                BE</p>
+                                                {{ $dataland->behance_name }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -17314,13 +16689,13 @@
                                                  style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;--extracted-r6o4lv:var(--variable-reference-ElhnrKOY8-Iytzg4y6q);--variable-reference-ElhnrKOY8-Iytzg4y6q:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--variable-reference-MZ2Epyfww-Iytzg4y6q:rgb(255, 255, 255);transform:none"
                                                  data-framer-component-type="RichTextContainer">
                                                 <p style="--font-selector:Q1VTVE9NO0Jhc2lzIEdyb3Rlc3F1ZSBQcm8gUmVndWxhcg==;--framer-font-family:&quot;Basis Grotesque Pro Regular&quot;, &quot;Basis Grotesque Pro Regular Placeholder&quot;, sans-serif;--framer-font-size:50px;--framer-letter-spacing:-0.2px;--framer-line-height:1em;--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-ElhnrKOY8-Iytzg4y6q))"
-                                                   class="framer-text">New Business</p>
+                                                   class="framer-text">{{ $dataland->footer_title }}</p>
                                             </div>
                                             <div class="framer-16npkx7" data-framer-name="Data Visualization"
                                                  style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;--extracted-r6o4lv:var(--variable-reference-ElhnrKOY8-Iytzg4y6q);--variable-reference-ElhnrKOY8-Iytzg4y6q:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));--variable-reference-MZ2Epyfww-Iytzg4y6q:rgb(255, 255, 255);transform:none"
                                                  data-framer-component-type="RichTextContainer">
                                                 <p style="--font-selector:Q1VTVE9NO0Jhc2lzIEdyb3Rlc3F1ZSBQcm8gUmVndWxhcg==;--framer-font-family:&quot;Basis Grotesque Pro Regular&quot;, &quot;Basis Grotesque Pro Regular Placeholder&quot;, sans-serif;--framer-font-size:50px;--framer-letter-spacing:-0.2px;--framer-line-height:1em;--framer-text-alignment:right;--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-ElhnrKOY8-Iytzg4y6q))"
-                                                   class="framer-text">hi@datalands.co</p>
+                                                   class="framer-text">{{ $dataland->footer_email }}</p>
                                             </div>
                                         </div>
                                         <div class="framer-ack39s" data-framer-name="Color Frame"
@@ -17336,7 +16711,7 @@
                                         <p class="framer-text framer-styles-preset-10erd1a"
                                            data-styles-preset="yVMxki16r"
                                            style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                            ©2019-24 Datalands™ | Lands of Data® LLC</p>
+                                           {{ $dataland->footer_detail }}</p>
                                     </div>
                                 </div>
                                 <div class="framer-g4579x" data-framer-name="Socials">
@@ -17349,8 +16724,8 @@
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
                                                 <!--$--><a class="framer-text framer-styles-preset-112mw6g"
                                                            data-styles-preset="FG5t4ckx5"
-                                                           href="https://instagram.com/datalands" target="_blank"
-                                                           rel="noopener">IG,</a><!--/$-->
+                                                           href="{{ $dataland->insta_url }}" target="_blank"
+                                                           rel="noopener">{{ $dataland->insta_name }},</a><!--/$-->
                                             </p>
                                         </div>
                                         <div class="framer-1nonhy2" data-framer-name="TW"
@@ -17361,8 +16736,8 @@
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
                                                 <!--$--><a class="framer-text framer-styles-preset-112mw6g"
                                                            data-styles-preset="FG5t4ckx5"
-                                                           href="https://twitter.com/wearedatalands" target="_blank"
-                                                           rel="noopener">TW,</a><!--/$-->
+                                                           href="{{ $dataland->twitter_url }}" target="_blank"
+                                                           rel="noopener">{{ $dataland->twitter_name }},</a><!--/$-->
                                             </p>
                                         </div>
                                         <div class="framer-1xhchkh" data-framer-name="BE"
@@ -17373,8 +16748,8 @@
                                                style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
                                                 <!--$--><a class="framer-text framer-styles-preset-112mw6g"
                                                            data-styles-preset="FG5t4ckx5"
-                                                           href="https://behance.net/datalands" target="_blank"
-                                                           rel="noopener">BE,</a><!--/$-->
+                                                           href="{{ $dataland->behance_url }}" target="_blank"
+                                                           rel="noopener">{{ $dataland->behance_name }},</a><!--/$-->
                                             </p>
                                         </div>
                                     </div>
@@ -17386,9 +16761,9 @@
                                         <p class="framer-text framer-styles-preset-10erd1a"
                                            data-styles-preset="yVMxki16r"
                                            style="--framer-text-color:var(--extracted-r6o4lv, var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0)))">
-                                            hi<!--$--><a class="framer-text"
+                                             !--$--><a class="framer-text"
                                                          href="mailto:Gavin%20Potenza%20%3Cgavin%40datalands.co%3E"
-                                                         rel="noopener">@datalands.co</a><!--/$--></p>
+                                                             rel="noopener">{{ $dataland->footer_email }}</a><!--/$--></p>
                                     </div>
                                 </div>
                             </div>
@@ -17408,21 +16783,21 @@
 
 <script data-framer-appear-animation="reduce"></script>
 <script>(() => { function d(e) { let t = Date.prototype.toLocaleString, o = Date.prototype.toLocaleDateString; t && (Date.prototype.toLocaleString = function (r, n) { let i = s(this, r, n); return u(e.current.Date.toLocaleString, i, () => t.call(this, r, n)) }), o && (Date.prototype.toLocaleDateString = function (r, n) { let i = s(this, r, n); return u(e.current.Date.toLocaleDateString, i, () => o.call(this, r, n)) }); let a = Object.getOwnPropertyDescriptors(Intl.DateTimeFormat.prototype).format.get, c = Intl.DateTimeFormat.prototype.formatRange, b = Intl.DateTimeFormat.prototype.formatToParts, D = Intl.DateTimeFormat.prototype.formatRangeToParts; a && Object.defineProperty(Intl.DateTimeFormat.prototype, "format", { get() { function m(r) { let n = p(this), i = s(r, n); return u(e.current.DateTimeFormat.format, i, () => a.call(this)(r)) } return m.bind(this) } }), c && (Intl.DateTimeFormat.prototype.formatRange = function (r, n) { let i = p(this), l = s(r, n, i); return u(e.current.DateTimeFormat.formatRange, l, () => c.call(this, r, n)) }), b && (Intl.DateTimeFormat.prototype.formatToParts = function (r) { let n = p(this), i = s(r, n); return u(e.current.DateTimeFormat.formatToParts, i, () => b.call(this, r)).map(g) }), D && (Intl.DateTimeFormat.prototype.formatRangeToParts = function (r, n) { let i = p(this), l = s(r, n, i); return u(e.current.DateTimeFormat.formatRangeToParts, l, () => D.call(this, r, n)).map(g) }); let y = Number.prototype.toLocaleString; y && (Number.prototype.toLocaleString = function (r, n) { let i = s(this, r, n); return u(e.current.Number.toLocaleString, i, () => y.call(this, r, n)) }); let h = Object.getOwnPropertyDescriptors(Intl.NumberFormat.prototype).format.get, F = Intl.NumberFormat.prototype.formatRange, T = Intl.NumberFormat.prototype.formatToParts, I = Intl.NumberFormat.prototype.formatRangeToParts; h && Object.defineProperty(Intl.NumberFormat.prototype, "format", { get() { function m(r) { let n = f(this), i = s(r, n); return u(e.current.NumberFormat.format, i, () => h.call(this)(r)) } return m.bind(this) } }), F && (Intl.NumberFormat.prototype.formatRange = function (r, n) { let i = f(this), l = s(r, n, i); return u(e.current.NumberFormat.formatRange, l, () => F.call(this, r, n)) }), T && (Intl.NumberFormat.prototype.formatToParts = function (r) { let n = f(this), i = s(r, n); return u(e.current.NumberFormat.formatToParts, i, () => T.call(this, r)).map(g) }), I && (Intl.NumberFormat.prototype.formatRangeToParts = function (r, n) { let i = f(this), l = s(r, n, i); return u(e.current.NumberFormat.formatRangeToParts, l, () => I.call(this, r, n)).map(g) }) } function P(e, t) { return typeof t == "bigint" ? `${t}n` : t instanceof Date ? t.getTime() : t } function s(...e) { let t = JSON.stringify(e, P), o = 0; for (let a = 0; a < t.length; a++)o += t.charCodeAt(a), o += o << 10, o ^= o >> 6; return o += o << 3, o ^= o >> 11, o += o << 15, o >>> 0 } function u(e, t, o) { let a = e[t]; if (typeof a < "u") return a; let c = o(); return e[t] = c, c } function g(e) { return { ...e } } function p(e) { let t = e.resolvedOptions(), o = { locale: t.locale, calendar: t.calendar, numberingSystem: t.numberingSystem, timeZone: t.timeZone, hour12: t.hour12, weekday: t.weekday, era: t.era, year: t.year, month: t.month, day: t.day, hour: t.hour, minute: t.minute, second: t.second, timeZoneName: t.timeZoneName }; for (let a in t) a in o || (o[a] = t[a]); return o } function f(e) { let t = e.resolvedOptions(), o = { locale: t.locale, numberingSystem: t.numberingSystem, style: t.style, currency: t.currency, currencyDisplay: t.currencyDisplay, currencySign: t.currencySign, unit: t.unit, unitDisplay: t.unitDisplay, minimumIntegerDigits: t.minimumIntegerDigits, minimumFractionDigits: t.minimumFractionDigits, maximumFractionDigits: t.maximumFractionDigits, minimumSignificantDigits: t.minimumSignificantDigits, maximumSignificantDigits: t.maximumSignificantDigits, useGrouping: t.useGrouping === !0 ? "auto" : t.useGrouping, notation: t.notation, compactDisplay: t.compactDisplay, signDisplay: t.signDisplay, roundingIncrement: t.roundingIncrement ?? 1, roundingMode: t.roundingMode ?? "halfExpand", roundingPriority: t.roundingPriority ?? "auto", trailingZeroDisplay: t.trailingZeroDisplay ?? "auto" }; for (let a in t) a in o || (o[a] = t[a]); return o } return d })()({ current: { "Date": { "toLocaleString": {}, "toLocaleDateString": {} }, "DateTimeFormat": { "format": {}, "formatRange": {}, "formatToParts": { "495489490": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "18" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "1032376290": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "17" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "58" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "1033046523": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "17" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "58" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "1045102223": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "17" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "58" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "1362368804": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "10" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "2052137430": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "10" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "2156378067": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "18" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "2585103078": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "17" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "58" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "2773164248": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "10" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "2806229854": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "10" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "2871193777": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "18" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "3092807868": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "17" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "58" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "3120725688": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "18" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "3500887845": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "10" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "3735825278": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "17" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "58" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "3918625752": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "10" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "4211631410": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "18" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }], "4243020604": [{ "type": "month", "value": "02" }, { "type": "literal", "value": "/" }, { "type": "day", "value": "05" }, { "type": "literal", "value": "/" }, { "type": "year", "value": "2025" }, { "type": "literal", "value": " " }, { "type": "era", "value": "AD" }, { "type": "literal", "value": ", " }, { "type": "hour", "value": "18" }, { "type": "literal", "value": ":" }, { "type": "minute", "value": "00" }, { "type": "literal", "value": ":" }, { "type": "second", "value": "10" }] }, "formatRangeToParts": {} }, "Number": { "toLocaleString": {} }, "NumberFormat": { "format": {}, "formatRange": {}, "formatToParts": {}, "formatRangeToParts": {} } } })</script>
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/chunk-MQBELU27.mjs">
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/chunk-JR5VT52U.mjs">
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/chunk-RIUMFBNJ.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/chunk-MQBELU27.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/chunk-JR5VT52U.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/chunk-RIUMFBNJ.mjs">
 <link rel="modulepreload" fetchpriority="low"
-      href="sites/2kYIWehRbUgt9UqVEdrHit/_2UASnDuEOWkVwzZsQqPqff578W5YEC7-Bf5tXUVZug.GIAZEAUF.mjs">
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/chunk-Y6UR6WQA.mjs">
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/chunk-CJWKE2PX.mjs">
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/chunk-SZ2KC36Z.mjs">
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/chunk-FLZNEFEE.mjs">
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/chunk-PUEQM2M7.mjs">
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/chunk-R7MYYGP6.mjs">
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/chunk-42U43NKG.mjs">
-<link rel="modulepreload" fetchpriority="low" href="sites/2kYIWehRbUgt9UqVEdrHit/script_main.BPE7KDJW.mjs">
+      href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/_2UASnDuEOWkVwzZsQqPqff578W5YEC7-Bf5tXUVZug.GIAZEAUF.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/chunk-Y6UR6WQA.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/chunk-CJWKE2PX.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/chunk-SZ2KC36Z.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/chunk-FLZNEFEE.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/chunk-PUEQM2M7.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/chunk-R7MYYGP6.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/chunk-42U43NKG.mjs">
+<link rel="modulepreload" fetchpriority="low" href="dataland/sites/2kYIWehRbUgt9UqVEdrHit/script_main.BPE7KDJW.mjs">
 <script type="module" async="" data-framer-bundle="main" fetchpriority="low"
-        src="sites/2kYIWehRbUgt9UqVEdrHit/script_main.BPE7KDJW.mjs"></script>
+        src="dataland/sites/2kYIWehRbUgt9UqVEdrHit/script_main.BPE7KDJW.mjs"></script>
 <div id="svg-templates"
      style="position: absolute; overflow: hidden; bottom: 0; left: 0; width: 0; height: 0; z-index: 0; contain: strict"
      aria-hidden="true">

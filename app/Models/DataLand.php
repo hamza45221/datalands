@@ -18,7 +18,6 @@ class DataLand extends Model
         'services_list'=>'array',
         'client_logo'=>'array',
         'about_us_card'=>'array',
-        'process_video'=>'array',
         'process_cards'=>'array',
     ];
 }

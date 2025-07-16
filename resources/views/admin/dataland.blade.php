@@ -99,7 +99,7 @@
                                     <div class="col-md-6 fv-row mb-7">
                                         <label class="required fs-6 fw-semibold mb-2">Main Video</label>
 
-                                        <input type="file" name="main_video" class="form-control form-control-solid" accept="video/*" placeholder="Main Video">
+                                        <input type="file" name="main_video" class="form-control form-control-solid" accept="video/*"  placeholder="Main Video">
 
                                         @if (!empty($dataland->main_video))
                                             <video controls class="mt-3" style="max-width: 100%; max-height: 80px;" autoplay muted>
@@ -129,6 +129,7 @@
 
 
                                 <div id="case_studies_cards_repeater">
+                                    <label class="fs-6 fw-semibold mb-2">Case Studies Cards</label>
                                     <div data-repeater-list="case_studies_cards">
                                         @php
                                             $caseStudiesCards = old('case_studies_cards', $dataland->case_studies_cards ?? []);
@@ -290,6 +291,7 @@
 
 
                                 <div id="about_us_card_repeater">
+                                    <label class="required fs-6 fw-semibold mb-2">About Us Cards</label>
                                     <div data-repeater-list="about_us_card">
                                         @php
                                             $cards = old('about_us_card', $dataland->about_us_card ?? []);
@@ -347,7 +349,7 @@
                                 <div class="col-md-6 fv-row mb-7">
                                     <label class="required fs-6 fw-semibold mb-2">Process Video</label>
 
-                                    <input type="file" name="main_video" class="form-control form-control-solid" accept="video/*" placeholder="Process Video">
+                                    <input type="file" name="process_video" class="form-control form-control-solid" accept="video/*" placeholder="Process Video">
 
                                     @if (!empty($dataland->process_video))
                                         <video controls class="mt-3" style="max-width: 100%; max-height: 80px;" autoplay muted>
