@@ -35,6 +35,11 @@ Route::group(['prefix'=>'admin'], function () {
         Route::post('/store', [App\Http\Controllers\Admin\HeroMainController::class, 'store'])->name('admin.heromain.store');
     });
 
+    Route::group(['prefix' => 'dataland'], function () {
+        Route::get('/', [App\Http\Controllers\Admin\DataLandController::class, 'index'])->name('admin.dataland');
+        Route::post('/store', [App\Http\Controllers\Admin\DataLandController::class, 'store'])->name('admin.dataland.store');
+    });
+
     Route::group(['prefix' => 'heromain_page_images'], function () {
         Route::get('/', [App\Http\Controllers\Admin\HeroMainController::class, 'indexImage'])->name('admin.heromain.image');
         Route::post('/store', [App\Http\Controllers\Admin\HeroMainController::class, 'storeImage'])->name('admin.heromain.image.store');

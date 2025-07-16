@@ -8815,9 +8815,10 @@
                         <foreignobject width="100%" height="100%" class="framer-fit-text" transform="scale(1)"
                                        style="overflow:visible;transform-origin:center center">
                             <p style="--font-selector:Q1VTVE9NO09aSUsgQmxhY2s=;--framer-font-family:&quot;OZIK Black&quot;, &quot;OZIK Black Placeholder&quot;, sans-serif;--framer-font-size:357.7581px;--framer-letter-spacing:-0.01em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255))"
-                               class="framer-text">Datalands </p>
+                               class="framer-text">{{ $dataland->main_heading }}</p>
                         </foreignobject>
-                    </svg></div>
+                    </svg>
+                </div>
                 <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
                     <svg class="framer-19sq2uk"
                                                                                         style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;transform:none"
@@ -8825,7 +8826,7 @@
                         <foreignobject width="100%" height="100%" class="framer-fit-text" transform="scale(1)"
                                        style="overflow:visible;transform-origin:center center">
                             <p style="--font-selector:Q1VTVE9NO09aSUsgQmxhY2s=;--framer-font-family:&quot;OZIK Black&quot;, &quot;OZIK Black Placeholder&quot;, sans-serif;--framer-font-size:94.0357px;--framer-letter-spacing:-0.01em;--framer-line-height:1.4em;--framer-text-alignment:left;--framer-text-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255))"
-                               class="framer-text">Datalands</p>
+                               class="framer-text">{{ $dataland->main_heading }}</p>
                         </foreignobject>
                     </svg>
                 </div>
@@ -8836,7 +8837,7 @@
                         <foreignobject width="100%" height="100%" class="framer-fit-text" transform="scale(1)"
                                        style="overflow:visible;transform-origin:center center">
                             <p style="--font-selector:Q1VTVE9NO09aSUsgQmxhY2s=;--framer-font-family:&quot;OZIK Black&quot;, &quot;OZIK Black Placeholder&quot;, sans-serif;--framer-font-size:482.0476259159004px;--framer-letter-spacing:-0.01em;--framer-line-height:1.5em;--framer-text-alignment:left;--framer-text-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255))"
-                               class="framer-text">Datalands</p>
+                               class="framer-text">{{ $dataland->main_heading }}</p>
                         </foreignobject>
                     </svg>
                 </div>
@@ -8845,14 +8846,14 @@
         <div class="framer-1xsge8z" data-framer-name="REEL" name="REEL">
             <div class="framer-1tncfu6-container">
                 <div class="ssr-variant hidden-qs7kru">
-                    <video src="dataland/assets/XukcdTdQbisd1V1ArlbgPNh907E.mp4" loop=""
+                    <video src="{{ asset($dataland->main_video) }}" loop=""
                                                               autoplay="" muted="" playsinline=""
                                                               style="cursor:auto;width:100%;height:100%;border-radius:20px;display:block;object-fit:cover;background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));object-position:50% 50%">
 
                     </video>
                 </div>
                 <div class="ssr-variant hidden-7gi421 hidden-3v2uua hidden-72rtr7"><video
-                        src="{{ asset('dataland/assets/XukcdTdQbisd1V1ArlbgPNh907E.mp4') }}" loop="" autoplay="" muted="" playsinline=""
+                        src="{{ asset($dataland->main_video) }}" loop="" autoplay="" muted="" playsinline=""
                         style="cursor:auto;width:100%;height:100%;border-radius:20px;display:block;object-fit:cover;background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));object-position:50% 50%">
 
                     </video>
@@ -8866,14 +8867,14 @@
 
                 <h3 class="framer-text framer-styles-preset-6vph8c" data-styles-preset="jH2SQvbsf"
                     style="--framer-text-alignment:left">
-                    Datalands is a visual communication and information design studio.
+                    {{ $dataland->main_heading_1 }}
                 </h3>
             </div>
             <div class="framer-1grja8k"
                  style="outline:none;display:flex;flex-direction:column;justify-content:center;flex-shrink:0;transform:none"
                  data-framer-component-type="RichTextContainer">
                 <p class="framer-text framer-styles-preset-7kw3ld" data-styles-preset="K40Y92M_4">
-                    We produce groundbreaking, thrilling projects—shaping the aesthetics and essence of forward-thinking brands.</p>
+                    {{ $dataland->main_heading_2 }}</p>
             </div>
         </div>
         <div class="framer-1k9ieku" data-border="true" data-framer-name="PROJECTS" name="PROJECTS">
@@ -8900,7 +8901,7 @@
                                 <p class="framer-text framer-styles-preset-10erd1a" data-styles-preset="yVMxki16r"
                                    style="--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-FrASgcrqe-nsCX04IBs))">
 
-                                    CASE STUDIES
+                                    {{ $dataland->case_studies_title }}
 
                                 </p>
                             </div>
@@ -8926,7 +8927,7 @@
                                  data-framer-component-type="RichTextContainer">
                                 <p class="framer-text framer-styles-preset-10erd1a" data-styles-preset="yVMxki16r"
                                    style="--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-FrASgcrqe-nsCX04IBs))">
-                                    CASE STUDIES</p>
+                                    {{ $dataland->case_studies_title }}</p>
                             </div>
                         </div>
                     </div>
@@ -8950,7 +8951,7 @@
                                  data-framer-component-type="RichTextContainer">
                                 <p class="framer-text framer-styles-preset-10erd1a" data-styles-preset="yVMxki16r"
                                    style="--framer-text-color:var(--extracted-r6o4lv, var(--variable-reference-FrASgcrqe-nsCX04IBs))">
-                                    CASE STUDIES</p>
+                                    {{ $dataland->case_studies_title }}</p>
                             </div>
                         </div>
                     </div>
@@ -8961,8 +8962,10 @@
             <div class="framer-rjuf0a" data-framer-name="01" name="01">
                 <div class="framer-sjkpd0" data-framer-name="Project" name="Project"
                      style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)"><!--$-->
+
                     <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                        <div class="framer-3yq6wn-container"><!--$--><span
+                        <div class="framer-3yq6wn-container"><!--$-->
+                            <span
                                 class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-vvavua framer-yf932d"
                                 data-framer-name="Video Alt"
                                 style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"
@@ -9015,8 +9018,10 @@
                                             </p>
                                         </div>
                                     </div>
-                                </span><!--/$--></div>
+                                </span><!--/$-->
+                        </div>
                     </div>
+
                     <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
                         <div class="framer-3yq6wn-container"><!--$--><a
                                 class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"
@@ -9122,7 +9127,7 @@
                                 </div>
                             </a><!--/$-->
                         </div>
-                    </div><!--/$-->
+                    </div>
                     <div class="framer-1tyryfq" data-framer-name="Info" name="Info">
                         <div class="framer-hh9uzm" data-framer-name="Proj-Card-Text" name="Proj-Card-Text">
                             <div class="framer-5u591x" data-framer-name="Desc"
@@ -9140,871 +9145,877 @@
                     </div>
                 </div>
             </div>
-            <div class="framer-urqmsp" data-framer-name="02-03" name="02-03">
-                <div class="framer-p6yslu" data-framer-name="Project" name="Project"
-                     style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)"><!--$-->
-                    <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                        <div class="framer-f2ubty-container">
-                            <div class="ssr-variant hidden-qs7kru"><!--$--><span
-                                    class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-vvavua framer-yf932d"
-                                    data-framer-name="Video Alt"
-                                    style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"
-                                    tabindex="0">
-                                        <div class="framer-1h5ww7t" data-framer-name="Image">
-                                            <div class="framer-arbjf2-container"><video
-                                                    src="{{ asset('dataland/assets/4Y5bBzDf57vZKjQM2mSMRRYQ8EA.mp4') }}" loop="" autoplay=""
-                                                    muted="" playsinline=""
-                                                    style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                            </div>
-                                            <div class="framer-5ju8az" data-framer-name="hover button"
-                                                 style="opacity:0;transform:rotate(45deg)">
-                                                <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                     style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                     class="framer-1vg5jmz" aria-hidden="true">
-                                                    <div class="svgContainer"
-                                                         style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                            style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                            <use href="#svg1549890397_640"></use>
-                                                        </svg></div>
-                                                </div>
-                                                <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                     style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                     data-framer-component-type="RichTextContainer">
-                                                    <p class="framer-text framer-styles-preset-63ckt7"
-                                                       data-styles-preset="Arz7WxDDM"
-                                                       style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
 
 
-                                                        View
-
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="framer-19gl2ev" data-framer-name="Client"
-                                             style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                            <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-10erd1a"
-                                                   data-styles-preset="yVMxki16r">
-
-                                                    Microsoft
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </span><!--/$--></div>
-                            <div class="ssr-variant hidden-72rtr7"><!--$--><span
-                                    class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-vvavua framer-yf932d"
-                                    data-framer-name="Video Alt"
-                                    style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"
-                                    tabindex="0">
-                                        <div class="framer-1h5ww7t" data-framer-name="Image">
-                                            <div class="framer-arbjf2-container"><video
-                                                    src="{{ asset('dataland/assets/4Y5bBzDf57vZKjQM2mSMRRYQ8EA.mp4') }}" loop="" autoplay=""
-                                                    muted="" playsinline=""
-                                                    style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                            </div>
-                                            <div class="framer-5ju8az" data-framer-name="hover button"
-                                                 style="opacity:0;transform:rotate(45deg)">
-                                                <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                     style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                     class="framer-1vg5jmz" aria-hidden="true">
-                                                    <div class="svgContainer"
-                                                         style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                            style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                            <use href="#svg1549890397_640"></use>
-                                                        </svg></div>
-                                                </div>
-                                                <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                     style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                     data-framer-component-type="RichTextContainer">
-                                                    <p class="framer-text framer-styles-preset-63ckt7"
-                                                       data-styles-preset="Arz7WxDDM"
-                                                       style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                        View</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="framer-19gl2ev" data-framer-name="Client"
-                                             style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                            <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-10erd1a"
-                                                   data-styles-preset="yVMxki16r">
-                                                    Microsoft
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </span><!--/$--></div>
-                        </div>
-                    </div>
-                    <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                        <div class="framer-f2ubty-container"><!--$--><a
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"
-                                data-framer-name="Mobile - Vid"
-                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"
-                                href="work/microsoft-praise.html" tabindex="0">
-                                <div class="framer-1h5ww7t" data-framer-name="Image">
-                                    <div class="framer-arbjf2-container"><video
-                                            src="dataland/assets/4Y5bBzDf57vZKjQM2mSMRRYQ8EA.mp4" loop="" autoplay=""
-                                            muted="" playsinline=""
-                                            style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                    </div>
-                                    <div class="framer-5ju8az" data-framer-name="hover button"
-                                         style="opacity:0;transform:rotate(45deg)">
-                                        <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                             class="framer-1vg5jmz" aria-hidden="true">
-                                            <div class="svgContainer"
-                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                    style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                    <use href="#svg1549890397_640"></use>
-                                                </svg></div>
-                                        </div>
-                                        <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-63ckt7"
-                                               data-styles-preset="Arz7WxDDM"
-                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                View</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="framer-19gl2ev" data-framer-name="Client"
-                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                         data-framer-component-type="RichTextContainer">
-                                        <p class="framer-text framer-styles-preset-10erd1a"
-                                           data-styles-preset="yVMxki16r">
-
-                                            Microsoft
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </a><!--/$--></div>
-                    </div>
-                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                        <div class="framer-f2ubty-container"><!--$--><a
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"
-                                data-framer-name="Mobile - Vid"
-                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;width:100%"
-                                href="work/microsoft-praise.html" tabindex="0">
-                                <div class="framer-1h5ww7t" data-framer-name="Image">
-                                    <div class="framer-arbjf2-container"><video
-                                            src="dataland/assets/4Y5bBzDf57vZKjQM2mSMRRYQ8EA.mp4" loop="" autoplay=""
-                                            muted="" playsinline=""
-                                            style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                    </div>
-                                    <div class="framer-5ju8az" data-framer-name="hover button"
-                                         style="opacity:0;transform:rotate(45deg)">
-                                        <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                             class="framer-1vg5jmz" aria-hidden="true">
-                                            <div class="svgContainer"
-                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                    style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                    <use href="#svg1549890397_640"></use>
-                                                </svg></div>
-                                        </div>
-                                        <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-63ckt7"
-                                               data-styles-preset="Arz7WxDDM"
-                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                View</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="framer-19gl2ev" data-framer-name="Client"
-                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                         data-framer-component-type="RichTextContainer">
-                                        <p class="framer-text framer-styles-preset-10erd1a"
-                                           data-styles-preset="yVMxki16r">Microsoft</p>
-                                    </div>
-                                </div>
-                            </a><!--/$--></div>
-                    </div><!--/$-->
-                    <div class="framer-r3lo3v" data-framer-name="Info" name="Info">
-                        <div class="framer-106n3q5" data-framer-name="Text" name="Text">
-                            <div class="framer-17tily5" data-framer-name="Desc"
-                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                 data-framer-component-type="RichTextContainer">
-                                <p class="framer-text framer-styles-preset-yy04ro" data-styles-preset="L542E8JoR">
 
 
-                                    Reimagining how a Fortune 50 brand visually communicates key user moments.
+{{--            <div class="framer-urqmsp" data-framer-name="02-03" name="02-03">--}}
+{{--                <div class="framer-p6yslu" data-framer-name="Project" name="Project"--}}
+{{--                     style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)"><!--$-->--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-3v2uua">--}}
+{{--                        <div class="framer-f2ubty-container">--}}
+{{--                            <div class="ssr-variant hidden-qs7kru"><!--$--><span--}}
+{{--                                    class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-vvavua framer-yf932d"--}}
+{{--                                    data-framer-name="Video Alt"--}}
+{{--                                    style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"--}}
+{{--                                    tabindex="0">--}}
+{{--                                        <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                            <div class="framer-arbjf2-container"><video--}}
+{{--                                                    src="{{ asset('dataland/assets/4Y5bBzDf57vZKjQM2mSMRRYQ8EA.mp4') }}" loop="" autoplay=""--}}
+{{--                                                    muted="" playsinline=""--}}
+{{--                                                    style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                                 style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                                <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                     style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                     class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                    <div class="svgContainer"--}}
+{{--                                                         style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                            style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                            <use href="#svg1549890397_640"></use>--}}
+{{--                                                        </svg></div>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                     style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                     data-framer-component-type="RichTextContainer">--}}
+{{--                                                    <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                       data-styles-preset="Arz7WxDDM"--}}
+{{--                                                       style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="framer-93jnv2" data-framer-name="Project" name="Project"
-                     style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)"><!--$-->
-                    <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                        <div class="framer-kcxvpq-container"><!--$--><span
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1fdzmls framer-yf932d"
-                                data-framer-name="Thumbnail"
-                                style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"
-                                tabindex="0">
-                                    <div class="framer-1h5ww7t" data-framer-name="Image">
-                                        <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
-                                             data-framer-background-image-wrapper="true"><img decoding="async"
-                                                                                              sizes="(min-width: 1920px) calc(100vw - 60px), (min-width: 1440px) and (max-width: 1919px) calc(100vw - 60px), (max-width: 809px) calc(100vw - 20px), (min-width: 810px) and (max-width: 1439px) calc(100vw - 40px)"
 
-                                                                                              src="dataland/images/XUjfzu0U1LLvmZmDA4MIXQdCsI.jpg" alt=""
-                                                                                              style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover"
-                                                                                              data-framer-original-sizes="calc(100vw - 60px)"></div>
-                                        <div class="framer-5ju8az" data-framer-name="hover button"
-                                             style="opacity:0;transform:rotate(45deg)">
-                                            <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                 class="framer-1vg5jmz" aria-hidden="true">
-                                                <div class="svgContainer"
-                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                        style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                        <use href="#svg1549890397_640"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-63ckt7"
-                                                   data-styles-preset="Arz7WxDDM"
-                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                    View</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="framer-19gl2ev" data-framer-name="Client" data-highlight="true"
-                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px"
-                                         tabindex="0">
-                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-10erd1a"
-                                               data-styles-preset="yVMxki16r">Volta</p>
-                                        </div>
-                                    </div>
-                                </span><!--/$--></div>
-                    </div>
-                    <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                        <div class="framer-kcxvpq-container"><!--$--><a
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1ja8ks4 framer-yf932d"
-                                data-framer-name="Mobile"
-                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"
-                                href="work/volta-campaign.html" tabindex="0">
-                                <div class="framer-1h5ww7t" data-framer-name="Image">
-                                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
-                                         data-framer-background-image-wrapper="true"><img decoding="async"
-                                                                                          sizes="(min-width: 1920px) calc(100vw - 60px), (min-width: 1440px) and (max-width: 1919px) calc(100vw - 60px), (max-width: 809px) calc(100vw - 20px), (min-width: 810px) and (max-width: 1439px) calc(100vw - 40px)"
-                                                                                          srcset="images/XUjfzu0U1LLvmZmDA4MIXQdCsI-1.jpg 512w?scale-down-to=512 512w,images/XUjfzu0U1LLvmZmDA4MIXQdCsI-2.jpg 1024w?scale-down-to=1024 1024w,images/XUjfzu0U1LLvmZmDA4MIXQdCsI.jpg 1970w"
-                                                                                          src="dataland/images/XUjfzu0U1LLvmZmDA4MIXQdCsI.jpg" alt=""
-                                                                                          style="display:block;width:100%;height:100%;border-radius:inherit;object-position:2.9% 50.2%;object-fit:cover"
-                                                                                          data-framer-original-sizes="calc(100vw - 20px)"></div>
-                                    <div class="framer-5ju8az" data-framer-name="hover button"
-                                         style="opacity:0;transform:rotate(45deg)">
-                                        <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:0;transform:rotate(-90deg)"
-                                             class="framer-1vg5jmz" aria-hidden="true">
-                                            <div class="svgContainer"
-                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                    style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                    <use href="#svg1549890397_640"></use>
-                                                </svg></div>
-                                        </div>
-                                        <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-63ckt7"
-                                               data-styles-preset="Arz7WxDDM"
-                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                View</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="framer-19gl2ev" data-framer-name="Client" data-highlight="true"
-                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px"
-                                     tabindex="0">
-                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                         data-framer-component-type="RichTextContainer">
-                                        <p class="framer-text framer-styles-preset-10erd1a"
-                                           data-styles-preset="yVMxki16r">Volta</p>
-                                    </div>
-                                </div>
-                            </a><!--/$--></div>
-                    </div>
-                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                        <div class="framer-kcxvpq-container"><!--$--><a
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1ja8ks4 framer-yf932d"
-                                data-framer-name="Mobile"
-                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"
-                                href="work/volta-campaign.html" tabindex="0">
-                                <div class="framer-1h5ww7t" data-framer-name="Image">
-                                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
-                                         data-framer-background-image-wrapper="true"><img decoding="async"
-                                                                                          sizes="(min-width: 1920px) calc(100vw - 60px), (min-width: 1440px) and (max-width: 1919px) calc(100vw - 60px), (max-width: 809px) calc(100vw - 20px), (min-width: 810px) and (max-width: 1439px) calc(100vw - 40px)"
-                                                                                          srcset="images/XUjfzu0U1LLvmZmDA4MIXQdCsI-1.jpg 512w?scale-down-to=512 512w,images/XUjfzu0U1LLvmZmDA4MIXQdCsI-2.jpg 1024w?scale-down-to=1024 1024w,images/XUjfzu0U1LLvmZmDA4MIXQdCsI.jpg 1970w"
-                                                                                          src="dataland/images/XUjfzu0U1LLvmZmDA4MIXQdCsI.jpg" alt=""
-                                                                                          style="display:block;width:100%;height:100%;border-radius:inherit;object-position:10.3% 47.2%;object-fit:cover"
-                                                                                          data-framer-original-sizes="calc(100vw - 40px)"></div>
-                                    <div class="framer-5ju8az" data-framer-name="hover button"
-                                         style="opacity:0;transform:rotate(45deg)">
-                                        <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:0;transform:rotate(-90deg)"
-                                             class="framer-1vg5jmz" aria-hidden="true">
-                                            <div class="svgContainer"
-                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                    style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                    <use href="#svg1549890397_640"></use>
-                                                </svg></div>
-                                        </div>
-                                        <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-63ckt7"
-                                               data-styles-preset="Arz7WxDDM"
-                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                View</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="framer-19gl2ev" data-framer-name="Client" data-highlight="true"
-                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px"
-                                     tabindex="0">
-                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                         data-framer-component-type="RichTextContainer">
-                                        <p class="framer-text framer-styles-preset-10erd1a"
-                                           data-styles-preset="yVMxki16r">
+{{--                                                        View--}}
 
-                                            Volta
+{{--                                                    </p>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                             style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                            <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                                   data-styles-preset="yVMxki16r">--}}
 
-                                        </p>
-                                    </div>
-                                </div>
-                            </a><!--/$--></div>
-                    </div><!--/$-->
-                    <div class="framer-dv86s9" data-framer-name="Info" name="Info">
-                        <div class="framer-1mtnqg2" data-framer-name="Text" name="Text">
-                            <div class="framer-qh7chi" data-framer-name="Desc"
-                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                 data-framer-component-type="RichTextContainer">
-                                <p class="framer-text framer-styles-preset-yy04ro" data-styles-preset="L542E8JoR">A
-                                    comprehensive report and social campaign for CPG climate consciousness.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="framer-1heno13" data-framer-name="04" name="04">
-                <div class="framer-km39ds" data-framer-name="Project" name="Project"
-                     style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)"><!--$-->
-                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-3v2uua">
-                        <div class="framer-fqzzl8-container"><!--$--><span
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-vvavua framer-yf932d"
-                                data-framer-name="Video Alt"
-                                style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"
-                                tabindex="0">
-                                    <div class="framer-1h5ww7t" data-framer-name="Image">
-                                        <div class="framer-arbjf2-container"><video
-                                                src="dataland/assets/wModeEICIsVzdJMH12KucakUA.mp4" loop="" autoplay="" muted=""
-                                                playsinline=""
-                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                        </div>
-                                        <div class="framer-5ju8az" data-framer-name="hover button"
-                                             style="opacity:0;transform:rotate(45deg)">
-                                            <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                 class="framer-1vg5jmz" aria-hidden="true">
-                                                <div class="svgContainer"
-                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                        style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                        <use href="#svg1549890397_640"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-63ckt7"
-                                                   data-styles-preset="Arz7WxDDM"
-                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                    View</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="framer-19gl2ev" data-framer-name="Client"
-                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-10erd1a"
-                                               data-styles-preset="yVMxki16r">LULULEMON STUDIO</p>
-                                        </div>
-                                    </div>
-                                </span><!--/$--></div>
-                    </div>
-                    <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                        <div class="framer-fqzzl8-container"><!--$--><a
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"
-                                data-framer-name="Mobile - Vid"
-                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"
-                                href="work/lululemon-studio-mirror.html" tabindex="0">
-                                <div class="framer-1h5ww7t" data-framer-name="Image">
-                                    <div class="framer-arbjf2-container"><video
-                                            src="dataland/assets/wModeEICIsVzdJMH12KucakUA.mp4" loop="" autoplay="" muted=""
-                                            playsinline=""
-                                            style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                    </div>
-                                    <div class="framer-5ju8az" data-framer-name="hover button"
-                                         style="opacity:0;transform:rotate(45deg)">
-                                        <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                             class="framer-1vg5jmz" aria-hidden="true">
-                                            <div class="svgContainer"
-                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                    style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                    <use href="#svg1549890397_640"></use>
-                                                </svg></div>
-                                        </div>
-                                        <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-63ckt7"
-                                               data-styles-preset="Arz7WxDDM"
-                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                View</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="framer-19gl2ev" data-framer-name="Client"
-                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                         data-framer-component-type="RichTextContainer">
-                                        <p class="framer-text framer-styles-preset-10erd1a"
-                                           data-styles-preset="yVMxki16r">LULULEMON STUDIO</p>
-                                    </div>
-                                </div>
-                            </a><!--/$--></div>
-                    </div>
-                    <div class="ssr-variant hidden-7gi421 hidden-3v2uua hidden-72rtr7">
-                        <div class="framer-fqzzl8-container"><!--$--><span
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-vvavua framer-yf932d"
-                                data-framer-name="Video Alt"
-                                style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"
-                                tabindex="0">
-                                    <div class="framer-1h5ww7t" data-framer-name="Image">
-                                        <div class="framer-arbjf2-container"><video
-                                                src="dataland/assets/wModeEICIsVzdJMH12KucakUA.mp4" loop="" autoplay="" muted=""
-                                                playsinline=""
-                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                        </div>
-                                        <div class="framer-5ju8az" data-framer-name="hover button"
-                                             style="opacity:0;transform:rotate(45deg)">
-                                            <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                 class="framer-1vg5jmz" aria-hidden="true">
-                                                <div class="svgContainer"
-                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                        style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                        <use href="#svg1549890397_640"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-63ckt7"
-                                                   data-styles-preset="Arz7WxDDM"
-                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                    View</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="framer-19gl2ev" data-framer-name="Client"
-                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-10erd1a"
-                                               data-styles-preset="yVMxki16r">
+{{--                                                    Microsoft--}}
 
-                                                LULULEMON STUDIO
+{{--                                                </p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </span><!--/$--></div>--}}
+{{--                            <div class="ssr-variant hidden-72rtr7"><!--$--><span--}}
+{{--                                    class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-vvavua framer-yf932d"--}}
+{{--                                    data-framer-name="Video Alt"--}}
+{{--                                    style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"--}}
+{{--                                    tabindex="0">--}}
+{{--                                        <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                            <div class="framer-arbjf2-container"><video--}}
+{{--                                                    src="{{ asset('dataland/assets/4Y5bBzDf57vZKjQM2mSMRRYQ8EA.mp4') }}" loop="" autoplay=""--}}
+{{--                                                    muted="" playsinline=""--}}
+{{--                                                    style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                                 style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                                <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                     style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                     class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                    <div class="svgContainer"--}}
+{{--                                                         style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                            style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                            <use href="#svg1549890397_640"></use>--}}
+{{--                                                        </svg></div>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                     style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                     data-framer-component-type="RichTextContainer">--}}
+{{--                                                    <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                       data-styles-preset="Arz7WxDDM"--}}
+{{--                                                       style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                        View</p>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                             style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                            <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                                   data-styles-preset="yVMxki16r">--}}
+{{--                                                    Microsoft--}}
+{{--                                                </p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </span><!--/$--></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">--}}
+{{--                        <div class="framer-f2ubty-container"><!--$--><a--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"--}}
+{{--                                data-framer-name="Mobile - Vid"--}}
+{{--                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"--}}
+{{--                                href="work/microsoft-praise.html" tabindex="0">--}}
+{{--                                <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                    <div class="framer-arbjf2-container"><video--}}
+{{--                                            src="dataland/assets/4Y5bBzDf57vZKjQM2mSMRRYQ8EA.mp4" loop="" autoplay=""--}}
+{{--                                            muted="" playsinline=""--}}
+{{--                                            style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                         style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                        <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                             class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                            <div class="svgContainer"--}}
+{{--                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                    style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                    <use href="#svg1549890397_640"></use>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                               data-styles-preset="Arz7WxDDM"--}}
+{{--                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                View</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                         data-framer-component-type="RichTextContainer">--}}
+{{--                                        <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                           data-styles-preset="yVMxki16r">--}}
 
-                                            </p>
-                                        </div>
-                                    </div>
-                                </span><!--/$--></div>
-                    </div>
-                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                        <div class="framer-fqzzl8-container"><!--$--><a
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"
-                                data-framer-name="Mobile - Vid"
-                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;width:100%"
-                                href="work/lululemon-studio-mirror.html" tabindex="0">
-                                <div class="framer-1h5ww7t" data-framer-name="Image">
-                                    <div class="framer-arbjf2-container"><video
-                                            src="dataland/assets/wModeEICIsVzdJMH12KucakUA.mp4" loop="" autoplay="" muted=""
-                                            playsinline=""
-                                            style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                    </div>
-                                    <div class="framer-5ju8az" data-framer-name="hover button"
-                                         style="opacity:0;transform:rotate(45deg)">
-                                        <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                             class="framer-1vg5jmz" aria-hidden="true">
-                                            <div class="svgContainer"
-                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                    style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                    <use href="#svg1549890397_640"></use>
-                                                </svg></div>
-                                        </div>
-                                        <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-63ckt7"
-                                               data-styles-preset="Arz7WxDDM"
-                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                View</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="framer-19gl2ev" data-framer-name="Client"
-                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                         data-framer-component-type="RichTextContainer">
-                                        <p class="framer-text framer-styles-preset-10erd1a"
-                                           data-styles-preset="yVMxki16r">
+{{--                                            Microsoft--}}
 
-                                            LULULEMON STUDIO
+{{--                                        </p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </a><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">--}}
+{{--                        <div class="framer-f2ubty-container"><!--$--><a--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"--}}
+{{--                                data-framer-name="Mobile - Vid"--}}
+{{--                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;width:100%"--}}
+{{--                                href="work/microsoft-praise.html" tabindex="0">--}}
+{{--                                <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                    <div class="framer-arbjf2-container"><video--}}
+{{--                                            src="dataland/assets/4Y5bBzDf57vZKjQM2mSMRRYQ8EA.mp4" loop="" autoplay=""--}}
+{{--                                            muted="" playsinline=""--}}
+{{--                                            style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                         style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                        <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                             class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                            <div class="svgContainer"--}}
+{{--                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                    style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                    <use href="#svg1549890397_640"></use>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                               data-styles-preset="Arz7WxDDM"--}}
+{{--                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                View</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                         data-framer-component-type="RichTextContainer">--}}
+{{--                                        <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                           data-styles-preset="yVMxki16r">Microsoft</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </a><!--/$--></div>--}}
+{{--                    </div><!--/$-->--}}
+{{--                    <div class="framer-r3lo3v" data-framer-name="Info" name="Info">--}}
+{{--                        <div class="framer-106n3q5" data-framer-name="Text" name="Text">--}}
+{{--                            <div class="framer-17tily5" data-framer-name="Desc"--}}
+{{--                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                <p class="framer-text framer-styles-preset-yy04ro" data-styles-preset="L542E8JoR">--}}
 
-                                        </p>
-                                    </div>
-                                </div>
-                            </a><!--/$--></div>
-                    </div><!--/$-->
-                    <div class="framer-4v34gl" data-framer-name="Info" name="Info">
-                        <div class="framer-4q0vwi" data-framer-name="Text" name="Text">
-                            <div class="framer-c3oa8w" data-framer-name="Desc"
-                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                 data-framer-component-type="RichTextContainer">
-                                <p class="framer-text framer-styles-preset-yy04ro" data-styles-preset="L542E8JoR">
 
-                                    Establishing a visual performance dashboard for an exciting new fitness
-                                    hardware.
+{{--                                    Reimagining how a Fortune 50 brand visually communicates key user moments.--}}
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="framer-1f100b8" data-framer-name="05-06" name="05-06">
-                <div class="framer-134tiz1" data-framer-name="Project" name="Project"
-                     style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)">
-                    <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                        <div class="framer-14btuk4-container"><!--$--><span
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-135r2c4 framer-yf932d"
-                                data-framer-name="Variant 3"
-                                style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"
-                                tabindex="0">
-                                    <div class="framer-1h5ww7t" data-framer-name="Image">
-                                        <div class="framer-arbjf2-container"><video
-                                                src="dataland/assets/fEjWHWbygc7GTnmh2JZf9wPXoaQ.mp4" loop="" autoplay=""
-                                                muted="" playsinline=""
-                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                        </div>
-                                        <div class="framer-5ju8az" data-framer-name="hover button"
-                                             style="opacity:0;transform:rotate(45deg)">
-                                            <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                 class="framer-1vg5jmz" aria-hidden="true">
-                                                <div class="svgContainer"
-                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                        style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                        <use href="#svg1549890397_640"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-63ckt7"
-                                                   data-styles-preset="Arz7WxDDM"
-                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                    Coming Soon</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="framer-19gl2ev" data-framer-name="Client"
-                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-10erd1a"
-                                               data-styles-preset="yVMxki16r">Dreams Never Die</p>
-                                        </div>
-                                    </div>
-                                </span><!--/$--></div>
-                    </div>
-                    <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                        <div class="framer-14btuk4-container"><!--$--><span
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"
-                                data-framer-name="Mobile - Vid"
-                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"
-                                tabindex="0">
-                                    <div class="framer-1h5ww7t" data-framer-name="Image">
-                                        <div class="framer-arbjf2-container"><video
-                                                src="dataland/assets/fEjWHWbygc7GTnmh2JZf9wPXoaQ.mp4" loop="" autoplay=""
-                                                muted="" playsinline=""
-                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                        </div>
-                                        <div class="framer-5ju8az" data-framer-name="hover button"
-                                             style="opacity:0;transform:rotate(45deg)">
-                                            <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                 class="framer-1vg5jmz" aria-hidden="true">
-                                                <div class="svgContainer"
-                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                        style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                        <use href="#svg1549890397_640"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-63ckt7"
-                                                   data-styles-preset="Arz7WxDDM"
-                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                    View</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="framer-19gl2ev" data-framer-name="Client"
-                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-10erd1a"
-                                               data-styles-preset="yVMxki16r">Dreams Never Die</p>
-                                        </div>
-                                    </div>
-                                </span><!--/$--></div>
-                    </div>
-                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                        <div class="framer-14btuk4-container"><!--$--><span
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-ovmola framer-yf932d"
-                                data-framer-name="Mobile - Vid NO LINK"
-                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"
-                                tabindex="0">
-                                    <div class="framer-1h5ww7t" data-framer-name="Image">
-                                        <div class="framer-arbjf2-container"><video
-                                                src="dataland/assets/fEjWHWbygc7GTnmh2JZf9wPXoaQ.mp4" loop="" autoplay=""
-                                                muted="" playsinline=""
-                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                        </div>
-                                        <div class="framer-5ju8az" data-framer-name="hover button"
-                                             style="opacity:0;transform:rotate(45deg)">
-                                            <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                 class="framer-1vg5jmz" aria-hidden="true">
-                                                <div class="svgContainer"
-                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                        style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                        <use href="#svg1549890397_640"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-63ckt7"
-                                                   data-styles-preset="Arz7WxDDM"
-                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                    View</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="framer-19gl2ev" data-framer-name="Client"
-                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-10erd1a"
-                                               data-styles-preset="yVMxki16r">Dreams Never Die</p>
-                                        </div>
-                                    </div>
-                                </span><!--/$--></div>
-                    </div>
-                    <div class="framer-1vk8qu5" data-framer-name="Info" name="Info">
-                        <div class="framer-108ye" data-framer-name="Text" name="Text">
-                            <div class="framer-1c1pxqq" data-framer-name="Desc"
-                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                 data-framer-component-type="RichTextContainer">
-                                <p class="framer-text framer-styles-preset-yy04ro" data-styles-preset="L542E8JoR">A
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="framer-93jnv2" data-framer-name="Project" name="Project"--}}
+{{--                     style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)"><!--$-->--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-3v2uua">--}}
+{{--                        <div class="framer-kcxvpq-container"><!--$--><span--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1fdzmls framer-yf932d"--}}
+{{--                                data-framer-name="Thumbnail"--}}
+{{--                                style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"--}}
+{{--                                tabindex="0">--}}
+{{--                                    <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                        <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"--}}
+{{--                                             data-framer-background-image-wrapper="true"><img decoding="async"--}}
+{{--                                                                                              sizes="(min-width: 1920px) calc(100vw - 60px), (min-width: 1440px) and (max-width: 1919px) calc(100vw - 60px), (max-width: 809px) calc(100vw - 20px), (min-width: 810px) and (max-width: 1439px) calc(100vw - 40px)"--}}
 
-                                    Web3 music company reinventing artist management
+{{--                                                                                              src="dataland/images/XUjfzu0U1LLvmZmDA4MIXQdCsI.jpg" alt=""--}}
+{{--                                                                                              style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover"--}}
+{{--                                                                                              data-framer-original-sizes="calc(100vw - 60px)"></div>--}}
+{{--                                        <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                             style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                            <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                 class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                <div class="svgContainer"--}}
+{{--                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                        style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                        <use href="#svg1549890397_640"></use>--}}
+{{--                                                    </svg></div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                   data-styles-preset="Arz7WxDDM"--}}
+{{--                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                    View</p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-19gl2ev" data-framer-name="Client" data-highlight="true"--}}
+{{--                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px"--}}
+{{--                                         tabindex="0">--}}
+{{--                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                               data-styles-preset="yVMxki16r">Volta</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </span><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">--}}
+{{--                        <div class="framer-kcxvpq-container"><!--$--><a--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1ja8ks4 framer-yf932d"--}}
+{{--                                data-framer-name="Mobile"--}}
+{{--                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"--}}
+{{--                                href="work/volta-campaign.html" tabindex="0">--}}
+{{--                                <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"--}}
+{{--                                         data-framer-background-image-wrapper="true"><img decoding="async"--}}
+{{--                                                                                          sizes="(min-width: 1920px) calc(100vw - 60px), (min-width: 1440px) and (max-width: 1919px) calc(100vw - 60px), (max-width: 809px) calc(100vw - 20px), (min-width: 810px) and (max-width: 1439px) calc(100vw - 40px)"--}}
+{{--                                                                                          srcset="images/XUjfzu0U1LLvmZmDA4MIXQdCsI-1.jpg 512w?scale-down-to=512 512w,images/XUjfzu0U1LLvmZmDA4MIXQdCsI-2.jpg 1024w?scale-down-to=1024 1024w,images/XUjfzu0U1LLvmZmDA4MIXQdCsI.jpg 1970w"--}}
+{{--                                                                                          src="dataland/images/XUjfzu0U1LLvmZmDA4MIXQdCsI.jpg" alt=""--}}
+{{--                                                                                          style="display:block;width:100%;height:100%;border-radius:inherit;object-position:2.9% 50.2%;object-fit:cover"--}}
+{{--                                                                                          data-framer-original-sizes="calc(100vw - 20px)"></div>--}}
+{{--                                    <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                         style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                        <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:0;transform:rotate(-90deg)"--}}
+{{--                                             class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                            <div class="svgContainer"--}}
+{{--                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                    style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                    <use href="#svg1549890397_640"></use>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                               data-styles-preset="Arz7WxDDM"--}}
+{{--                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                View</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="framer-19gl2ev" data-framer-name="Client" data-highlight="true"--}}
+{{--                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px"--}}
+{{--                                     tabindex="0">--}}
+{{--                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                         data-framer-component-type="RichTextContainer">--}}
+{{--                                        <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                           data-styles-preset="yVMxki16r">Volta</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </a><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">--}}
+{{--                        <div class="framer-kcxvpq-container"><!--$--><a--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1ja8ks4 framer-yf932d"--}}
+{{--                                data-framer-name="Mobile"--}}
+{{--                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"--}}
+{{--                                href="work/volta-campaign.html" tabindex="0">--}}
+{{--                                <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                    <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"--}}
+{{--                                         data-framer-background-image-wrapper="true">--}}
+{{--                                        <img decoding="async"--}}
+{{--                                                                                          sizes="(min-width: 1920px) calc(100vw - 60px), (min-width: 1440px) and (max-width: 1919px) calc(100vw - 60px), (max-width: 809px) calc(100vw - 20px), (min-width: 810px) and (max-width: 1439px) calc(100vw - 40px)"--}}
+{{--                                                                                          srcset="images/XUjfzu0U1LLvmZmDA4MIXQdCsI-1.jpg 512w?scale-down-to=512 512w,images/XUjfzu0U1LLvmZmDA4MIXQdCsI-2.jpg 1024w?scale-down-to=1024 1024w,images/XUjfzu0U1LLvmZmDA4MIXQdCsI.jpg 1970w"--}}
+{{--                                                                                          src="dataland/images/XUjfzu0U1LLvmZmDA4MIXQdCsI.jpg" alt=""--}}
+{{--                                                                                          style="display:block;width:100%;height:100%;border-radius:inherit;object-position:10.3% 47.2%;object-fit:cover"--}}
+{{--                                                                                          data-framer-original-sizes="calc(100vw - 40px)"></div>--}}
+{{--                                    <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                         style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                        <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:0;transform:rotate(-90deg)"--}}
+{{--                                             class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                            <div class="svgContainer"--}}
+{{--                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                    style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                    <use href="#svg1549890397_640"></use>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                               data-styles-preset="Arz7WxDDM"--}}
+{{--                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                View</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="framer-19gl2ev" data-framer-name="Client" data-highlight="true"--}}
+{{--                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px"--}}
+{{--                                     tabindex="0">--}}
+{{--                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                         data-framer-component-type="RichTextContainer">--}}
+{{--                                        <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                           data-styles-preset="yVMxki16r">--}}
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="framer-1hix2zt" data-framer-name="Project" name="Project"
-                     style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)">
-                    <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
-                        <div class="framer-1hqfrqc-container"><!--$--><span
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-135r2c4 framer-yf932d"
-                                data-framer-name="Variant 3"
-                                style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"
-                                tabindex="0">
-                                    <div class="framer-1h5ww7t" data-framer-name="Image">
-                                        <div class="framer-arbjf2-container"><video
-                                                src="dataland/assets/3DJLwIVXWem5unFe6M2TRWLFs.mp4" loop="" autoplay="" muted=""
-                                                playsinline=""
-                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                        </div>
-                                        <div class="framer-5ju8az" data-framer-name="hover button"
-                                             style="opacity:0;transform:rotate(45deg)">
-                                            <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                 class="framer-1vg5jmz" aria-hidden="true">
-                                                <div class="svgContainer"
-                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                        style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                        <use href="#svg1549890397_640"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-63ckt7"
-                                                   data-styles-preset="Arz7WxDDM"
-                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                    Coming Soon</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="framer-19gl2ev" data-framer-name="Client"
-                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-10erd1a"
-                                               data-styles-preset="yVMxki16r">TSZ</p>
-                                        </div>
-                                    </div>
-                                </span><!--/$--></div>
-                    </div>
-                    <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
-                        <div class="framer-1hqfrqc-container"><!--$--><span
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"
-                                data-framer-name="Mobile - Vid"
-                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"
-                                tabindex="0">
-                                    <div class="framer-1h5ww7t" data-framer-name="Image">
-                                        <div class="framer-arbjf2-container"><video
-                                                src="dataland/assets/3DJLwIVXWem5unFe6M2TRWLFs.mp4" loop="" autoplay="" muted=""
-                                                playsinline=""
-                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                        </div>
-                                        <div class="framer-5ju8az" data-framer-name="hover button"
-                                             style="opacity:0;transform:rotate(45deg)">
-                                            <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                 class="framer-1vg5jmz" aria-hidden="true">
-                                                <div class="svgContainer"
-                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                        style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                        <use href="#svg1549890397_640"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-63ckt7"
-                                                   data-styles-preset="Arz7WxDDM"
-                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                    View</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="framer-19gl2ev" data-framer-name="Client"
-                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-10erd1a"
-                                               data-styles-preset="yVMxki16r">TSZ</p>
-                                        </div>
-                                    </div>
-                                </span><!--/$--></div>
-                    </div>
-                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">
-                        <div class="framer-1hqfrqc-container"><!--$--><span
-                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-ovmola framer-yf932d"
-                                data-framer-name="Mobile - Vid NO LINK"
-                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"
-                                tabindex="0">
-                                    <div class="framer-1h5ww7t" data-framer-name="Image">
-                                        <div class="framer-arbjf2-container"><video
-                                                src="dataland/assets/3DJLwIVXWem5unFe6M2TRWLFs.mp4" loop="" autoplay="" muted=""
-                                                playsinline=""
-                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>
-                                        </div>
-                                        <div class="framer-5ju8az" data-framer-name="hover button"
-                                             style="opacity:0;transform:rotate(45deg)">
-                                            <div data-framer-component-type="SVG" data-framer-name="Vector"
-                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"
-                                                 class="framer-1vg5jmz" aria-hidden="true">
-                                                <div class="svgContainer"
-                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                        style="width:100%;height:100%" viewbox="0 0 272 272">
-                                                        <use href="#svg1549890397_640"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div class="framer-fx2a2f" data-framer-name="VIEW"
-                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"
-                                                 data-framer-component-type="RichTextContainer">
-                                                <p class="framer-text framer-styles-preset-63ckt7"
-                                                   data-styles-preset="Arz7WxDDM"
-                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">
-                                                    View</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="framer-19gl2ev" data-framer-name="Client"
-                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">
-                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"
-                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                             data-framer-component-type="RichTextContainer">
-                                            <p class="framer-text framer-styles-preset-10erd1a"
-                                               data-styles-preset="yVMxki16r">TSZ</p>
-                                        </div>
-                                    </div>
-                                </span><!--/$--></div>
-                    </div>
-                    <div class="framer-111kk86" data-framer-name="Info" name="Info">
-                        <div class="framer-17cu6kx" data-framer-name="Text" name="Text">
-                            <div class="framer-1rbgaf5" data-framer-name="Desc"
-                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
-                                 data-framer-component-type="RichTextContainer">
-                                <p class="framer-text framer-styles-preset-yy04ro" data-styles-preset="L542E8JoR">
-                                    Telling the visual story of a revolutionary media company</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--                                            Volta--}}
+
+{{--                                        </p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </a><!--/$--></div>--}}
+{{--                    </div><!--/$-->--}}
+{{--                    <div class="framer-dv86s9" data-framer-name="Info" name="Info">--}}
+{{--                        <div class="framer-1mtnqg2" data-framer-name="Text" name="Text">--}}
+{{--                            <div class="framer-qh7chi" data-framer-name="Desc"--}}
+{{--                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                <p class="framer-text framer-styles-preset-yy04ro" data-styles-preset="L542E8JoR">A--}}
+{{--                                    comprehensive report and social campaign for CPG climate consciousness.</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="framer-1heno13" data-framer-name="04" name="04">--}}
+{{--                <div class="framer-km39ds" data-framer-name="Project" name="Project"--}}
+{{--                     style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)"><!--$-->--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-3v2uua">--}}
+{{--                        <div class="framer-fqzzl8-container"><!--$--><span--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-vvavua framer-yf932d"--}}
+{{--                                data-framer-name="Video Alt"--}}
+{{--                                style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"--}}
+{{--                                tabindex="0">--}}
+{{--                                    <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                        <div class="framer-arbjf2-container"><video--}}
+{{--                                                src="dataland/assets/wModeEICIsVzdJMH12KucakUA.mp4" loop="" autoplay="" muted=""--}}
+{{--                                                playsinline=""--}}
+{{--                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                             style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                            <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                 class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                <div class="svgContainer"--}}
+{{--                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                        style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                        <use href="#svg1549890397_640"></use>--}}
+{{--                                                    </svg></div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                   data-styles-preset="Arz7WxDDM"--}}
+{{--                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                    View</p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                               data-styles-preset="yVMxki16r">LULULEMON STUDIO</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </span><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">--}}
+{{--                        <div class="framer-fqzzl8-container"><!--$--><a--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"--}}
+{{--                                data-framer-name="Mobile - Vid"--}}
+{{--                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"--}}
+{{--                                href="work/lululemon-studio-mirror.html" tabindex="0">--}}
+{{--                                <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                    <div class="framer-arbjf2-container"><video--}}
+{{--                                            src="dataland/assets/wModeEICIsVzdJMH12KucakUA.mp4" loop="" autoplay="" muted=""--}}
+{{--                                            playsinline=""--}}
+{{--                                            style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                         style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                        <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                             class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                            <div class="svgContainer"--}}
+{{--                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                    style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                    <use href="#svg1549890397_640"></use>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                               data-styles-preset="Arz7WxDDM"--}}
+{{--                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                View</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                         data-framer-component-type="RichTextContainer">--}}
+{{--                                        <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                           data-styles-preset="yVMxki16r">LULULEMON STUDIO</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </a><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-3v2uua hidden-72rtr7">--}}
+{{--                        <div class="framer-fqzzl8-container"><!--$--><span--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-vvavua framer-yf932d"--}}
+{{--                                data-framer-name="Video Alt"--}}
+{{--                                style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"--}}
+{{--                                tabindex="0">--}}
+{{--                                    <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                        <div class="framer-arbjf2-container"><video--}}
+{{--                                                src="dataland/assets/wModeEICIsVzdJMH12KucakUA.mp4" loop="" autoplay="" muted=""--}}
+{{--                                                playsinline=""--}}
+{{--                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                             style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                            <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                 class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                <div class="svgContainer"--}}
+{{--                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                        style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                        <use href="#svg1549890397_640"></use>--}}
+{{--                                                    </svg></div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                   data-styles-preset="Arz7WxDDM"--}}
+{{--                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                    View</p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                               data-styles-preset="yVMxki16r">--}}
+
+{{--                                                LULULEMON STUDIO--}}
+
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </span><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">--}}
+{{--                        <div class="framer-fqzzl8-container"><!--$--><a--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"--}}
+{{--                                data-framer-name="Mobile - Vid"--}}
+{{--                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;width:100%"--}}
+{{--                                href="work/lululemon-studio-mirror.html" tabindex="0">--}}
+{{--                                <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                    <div class="framer-arbjf2-container"><video--}}
+{{--                                            src="dataland/assets/wModeEICIsVzdJMH12KucakUA.mp4" loop="" autoplay="" muted=""--}}
+{{--                                            playsinline=""--}}
+{{--                                            style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                         style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                        <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                             style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                             class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                            <div class="svgContainer"--}}
+{{--                                                 style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                    style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                    <use href="#svg1549890397_640"></use>--}}
+{{--                                                </svg></div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                               data-styles-preset="Arz7WxDDM"--}}
+{{--                                               style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                View</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                     style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                    <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                         style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                         data-framer-component-type="RichTextContainer">--}}
+{{--                                        <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                           data-styles-preset="yVMxki16r">--}}
+
+{{--                                            LULULEMON STUDIO--}}
+
+{{--                                        </p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </a><!--/$-->--}}
+{{--                        </div>--}}
+{{--                    </div><!--/$-->--}}
+{{--                    <div class="framer-4v34gl" data-framer-name="Info" name="Info">--}}
+{{--                        <div class="framer-4q0vwi" data-framer-name="Text" name="Text">--}}
+{{--                            <div class="framer-c3oa8w" data-framer-name="Desc"--}}
+{{--                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                <p class="framer-text framer-styles-preset-yy04ro" data-styles-preset="L542E8JoR">--}}
+
+{{--                                    Establishing a visual performance dashboard for an exciting new fitness--}}
+{{--                                    hardware.--}}
+
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="framer-1f100b8" data-framer-name="05-06" name="05-06">--}}
+{{--                <div class="framer-134tiz1" data-framer-name="Project" name="Project"--}}
+{{--                     style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)">--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-3v2uua">--}}
+{{--                        <div class="framer-14btuk4-container"><!--$--><span--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-135r2c4 framer-yf932d"--}}
+{{--                                data-framer-name="Variant 3"--}}
+{{--                                style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"--}}
+{{--                                tabindex="0">--}}
+{{--                                    <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                        <div class="framer-arbjf2-container"><video--}}
+{{--                                                src="dataland/assets/fEjWHWbygc7GTnmh2JZf9wPXoaQ.mp4" loop="" autoplay=""--}}
+{{--                                                muted="" playsinline=""--}}
+{{--                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                             style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                            <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                 class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                <div class="svgContainer"--}}
+{{--                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                        style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                        <use href="#svg1549890397_640"></use>--}}
+{{--                                                    </svg></div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                   data-styles-preset="Arz7WxDDM"--}}
+{{--                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                    Coming Soon</p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                               data-styles-preset="yVMxki16r">Dreams Never Die</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </span><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">--}}
+{{--                        <div class="framer-14btuk4-container"><!--$--><span--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"--}}
+{{--                                data-framer-name="Mobile - Vid"--}}
+{{--                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"--}}
+{{--                                tabindex="0">--}}
+{{--                                    <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                        <div class="framer-arbjf2-container"><video--}}
+{{--                                                src="dataland/assets/fEjWHWbygc7GTnmh2JZf9wPXoaQ.mp4" loop="" autoplay=""--}}
+{{--                                                muted="" playsinline=""--}}
+{{--                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                             style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                            <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                 class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                <div class="svgContainer"--}}
+{{--                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                        style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                        <use href="#svg1549890397_640"></use>--}}
+{{--                                                    </svg></div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                   data-styles-preset="Arz7WxDDM"--}}
+{{--                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                    View</p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                               data-styles-preset="yVMxki16r">Dreams Never Die</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </span><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">--}}
+{{--                        <div class="framer-14btuk4-container"><!--$--><span--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-ovmola framer-yf932d"--}}
+{{--                                data-framer-name="Mobile - Vid NO LINK"--}}
+{{--                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"--}}
+{{--                                tabindex="0">--}}
+{{--                                    <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                        <div class="framer-arbjf2-container"><video--}}
+{{--                                                src="dataland/assets/fEjWHWbygc7GTnmh2JZf9wPXoaQ.mp4" loop="" autoplay=""--}}
+{{--                                                muted="" playsinline=""--}}
+{{--                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                             style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                            <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                 class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                <div class="svgContainer"--}}
+{{--                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                        style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                        <use href="#svg1549890397_640"></use>--}}
+{{--                                                    </svg></div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                   data-styles-preset="Arz7WxDDM"--}}
+{{--                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                    View</p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                               data-styles-preset="yVMxki16r">Dreams Never Die</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </span><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="framer-1vk8qu5" data-framer-name="Info" name="Info">--}}
+{{--                        <div class="framer-108ye" data-framer-name="Text" name="Text">--}}
+{{--                            <div class="framer-1c1pxqq" data-framer-name="Desc"--}}
+{{--                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                <p class="framer-text framer-styles-preset-yy04ro" data-styles-preset="L542E8JoR">A--}}
+
+{{--                                    Web3 music company reinventing artist management--}}
+
+{{--                                </p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="framer-1hix2zt" data-framer-name="Project" name="Project"--}}
+{{--                     style="will-change:transform;opacity:1;transform:perspective(1200px) translateY(90px)">--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-3v2uua">--}}
+{{--                        <div class="framer-1hqfrqc-container"><!--$--><span--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-135r2c4 framer-yf932d"--}}
+{{--                                data-framer-name="Variant 3"--}}
+{{--                                style="border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:30px;border-top-right-radius:30px;height:100%;width:100%"--}}
+{{--                                tabindex="0">--}}
+{{--                                    <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                        <div class="framer-arbjf2-container"><video--}}
+{{--                                                src="dataland/assets/3DJLwIVXWem5unFe6M2TRWLFs.mp4" loop="" autoplay="" muted=""--}}
+{{--                                                playsinline=""--}}
+{{--                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                             style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                            <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                 class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                <div class="svgContainer"--}}
+{{--                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                        style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                        <use href="#svg1549890397_640"></use>--}}
+{{--                                                    </svg></div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                   data-styles-preset="Arz7WxDDM"--}}
+{{--                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                    Coming Soon</p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                               data-styles-preset="yVMxki16r">TSZ</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </span><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">--}}
+{{--                        <div class="framer-1hqfrqc-container"><!--$--><span--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-1p8x6tn framer-yf932d"--}}
+{{--                                data-framer-name="Mobile - Vid"--}}
+{{--                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"--}}
+{{--                                tabindex="0">--}}
+{{--                                    <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                        <div class="framer-arbjf2-container"><video--}}
+{{--                                                src="dataland/assets/3DJLwIVXWem5unFe6M2TRWLFs.mp4" loop="" autoplay="" muted=""--}}
+{{--                                                playsinline=""--}}
+{{--                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                             style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                            <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                 class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                <div class="svgContainer"--}}
+{{--                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                        style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                        <use href="#svg1549890397_640"></use>--}}
+{{--                                                    </svg></div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                   data-styles-preset="Arz7WxDDM"--}}
+{{--                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                    View</p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                               data-styles-preset="yVMxki16r">TSZ</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </span><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="ssr-variant hidden-7gi421 hidden-qs7kru hidden-72rtr7">--}}
+{{--                        <div class="framer-1hqfrqc-container"><!--$--><span--}}
+{{--                                class="framer-x2uZF framer-CJlXC framer-tkNsP framer-1fdzmls framer-v-ovmola framer-yf932d"--}}
+{{--                                data-framer-name="Mobile - Vid NO LINK"--}}
+{{--                                style="border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;height:100%;width:100%"--}}
+{{--                                tabindex="0">--}}
+{{--                                    <div class="framer-1h5ww7t" data-framer-name="Image">--}}
+{{--                                        <div class="framer-arbjf2-container"><video--}}
+{{--                                                src="dataland/assets/3DJLwIVXWem5unFe6M2TRWLFs.mp4" loop="" autoplay="" muted=""--}}
+{{--                                                playsinline=""--}}
+{{--                                                style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));object-position:50% 50%"></video>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="framer-5ju8az" data-framer-name="hover button"--}}
+{{--                                             style="opacity:0;transform:rotate(45deg)">--}}
+{{--                                            <div data-framer-component-type="SVG" data-framer-name="Vector"--}}
+{{--                                                 style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1);opacity:1;transform:rotate(-90deg)"--}}
+{{--                                                 class="framer-1vg5jmz" aria-hidden="true">--}}
+{{--                                                <div class="svgContainer"--}}
+{{--                                                     style="width:100%;height:100%;aspect-ratio:inherit"><svg--}}
+{{--                                                        style="width:100%;height:100%" viewbox="0 0 272 272">--}}
+{{--                                                        <use href="#svg1549890397_640"></use>--}}
+{{--                                                    </svg></div>--}}
+{{--                                            </div>--}}
+{{--                                            <div class="framer-fx2a2f" data-framer-name="VIEW"--}}
+{{--                                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255));transform:translate(-50%, -50%) rotate(-45deg)"--}}
+{{--                                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                                <p class="framer-text framer-styles-preset-63ckt7"--}}
+{{--                                                   data-styles-preset="Arz7WxDDM"--}}
+{{--                                                   style="--framer-text-color:var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))">--}}
+{{--                                                    View</p>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="framer-19gl2ev" data-framer-name="Client"--}}
+{{--                                         style="background-color:var(--token-03833126-8112-475c-b89e-8e35620cc6ef, rgb(0, 0, 0));border-bottom-left-radius:49px;border-bottom-right-radius:49px;border-top-left-radius:49px;border-top-right-radius:49px">--}}
+{{--                                        <div class="framer-oqqyl4" data-framer-name="Microsoft"--}}
+{{--                                             style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                             data-framer-component-type="RichTextContainer">--}}
+{{--                                            <p class="framer-text framer-styles-preset-10erd1a"--}}
+{{--                                               data-styles-preset="yVMxki16r">TSZ</p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </span><!--/$--></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="framer-111kk86" data-framer-name="Info" name="Info">--}}
+{{--                        <div class="framer-17cu6kx" data-framer-name="Text" name="Text">--}}
+{{--                            <div class="framer-1rbgaf5" data-framer-name="Desc"--}}
+{{--                                 style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"--}}
+{{--                                 data-framer-component-type="RichTextContainer">--}}
+{{--                                <p class="framer-text framer-styles-preset-yy04ro" data-styles-preset="L542E8JoR">--}}
+{{--                                    Telling the visual story of a revolutionary media company</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
         <div class="framer-fds42v" data-border="true" data-framer-name="MORE WORK" name="MORE WORK">
             <div class="ssr-variant hidden-7gi421 hidden-3v2uua">
@@ -10030,6 +10041,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="ssr-variant hidden-qs7kru hidden-3v2uua hidden-72rtr7">
                 <div class="framer-jmidz4-container">
                     <div class="framer-zGK6G framer-tkNsP framer-14o1kwx framer-v-14o1kwx"
@@ -10076,6 +10088,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="framer-e11v2v" data-framer-name="04" name="04">
                 <div class="framer-1byiler">
                     <div class="framer-jrt9h-container">
@@ -10109,7 +10123,7 @@
                                                      data-framer-background-image-wrapper="true"><img
                                                         decoding="async"
                                                         sizes="(min-width: 1440px) and (max-width: 1919px) 888px, (max-width: 809px) 888px, (min-width: 1920px) 888px, (min-width: 810px) and (max-width: 1439px) 888px"
-                                                        srcset="dataland/images/oJYuZ8IQGBoZl9wA65ZW5hnP8s-1.png 512w?scale-down-to=512 512w,images/oJYuZ8IQGBoZl9wA65ZW5hnP8s.png 1024w?scale-down-to=1024 1024w,images/oJYuZ8IQGBoZl9wA65ZW5hnP8s-2.png 1775w"
+                                                        srcset="dataland/images/oJYuZ8IQGBoZl9wA65ZW5hnP8s-1.png 512w?scale-down-to=512 512w,dataland/images/oJYuZ8IQGBoZl9wA65ZW5hnP8s.png 1024w?scale-down-to=1024 1024w,images/oJYuZ8IQGBoZl9wA65ZW5hnP8s-2.png 1775w"
                                                         src="dataland/images/oJYuZ8IQGBoZl9wA65ZW5hnP8s.png?scale-down-to=1024"
                                                         alt=""
                                                         style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover"
@@ -14297,10 +14311,11 @@
                                     <div class="framer-1ujeryh" data-framer-name="Union"
                                          style="border-bottom-left-radius:0;border-bottom-right-radius:0;border-top-left-radius:0;border-top-right-radius:0;opacity:0;transform:none">
                                         <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
-                                             data-framer-background-image-wrapper="true"><img decoding="async"
+                                             data-framer-background-image-wrapper="true">
+                                            <img decoding="async"
                                                                                               sizes="(min-width: 1920px) 70px, (min-width: 1440px) and (max-width: 1919px) 70px"
                                                                                               srcset="images/mU1KIR3f1ePdMZdxn0CEE8yWJg.png 700w"
-                                                                                              src="images/mU1KIR3f1ePdMZdxn0CEE8yWJg.png" alt=""
+                                                                                              src="dataland/images/mU1KIR3f1ePdMZdxn0CEE8yWJg.png" alt=""
                                                                                               style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain"
                                                                                               data-framer-original-sizes="70px"></div>
                                     </div>
@@ -14372,7 +14387,7 @@
                                              data-framer-background-image-wrapper="true"><img decoding="async"
                                                                                               sizes="(min-width: 1920px) 70px, (min-width: 1440px) and (max-width: 1919px) 70px"
                                                                                               srcset="images/x9shw6BvjLKWZGgl4FfWPd9k-1.png 512w?scale-down-to=512 512w,images/x9shw6BvjLKWZGgl4FfWPd9k-2.png 1024w?scale-down-to=1024 1024w,images/x9shw6BvjLKWZGgl4FfWPd9k.png 1060w"
-                                                                                              src="images/x9shw6BvjLKWZGgl4FfWPd9k.png" alt=""
+                                                                                              src="dataland/images/x9shw6BvjLKWZGgl4FfWPd9k.png" alt=""
                                                                                               style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain"
                                                                                               data-framer-original-sizes="70px"></div>
                                     </div>
@@ -14444,7 +14459,7 @@
                                              data-framer-background-image-wrapper="true"><img decoding="async"
                                                                                               sizes="(min-width: 1920px) 70px, (min-width: 1440px) and (max-width: 1919px) 70px"
                                                                                               srcset="images/K6WxuYkE1kZ46E6u3fwMkyll8k-1.png 512w?scale-down-to=512 512w,images/K6WxuYkE1kZ46E6u3fwMkyll8k-2.png 1024w?scale-down-to=1024 1024w,images/K6WxuYkE1kZ46E6u3fwMkyll8k.png 1281w"
-                                                                                              src="images/K6WxuYkE1kZ46E6u3fwMkyll8k.png" alt=""
+                                                                                              src="dataland/images/K6WxuYkE1kZ46E6u3fwMkyll8k.png" alt=""
                                                                                               style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain"
                                                                                               data-framer-original-sizes="70px"></div>
                                     </div>
@@ -14516,7 +14531,7 @@
                                              data-framer-background-image-wrapper="true"><img decoding="async"
                                                                                               sizes="(min-width: 1920px) 70px, (min-width: 1440px) and (max-width: 1919px) 70px"
                                                                                               srcset="images/5Cs05meFL4tix3XaBRezHUKaM-1.png 512w?scale-down-to=512 512w,images/5Cs05meFL4tix3XaBRezHUKaM-2.png 1024w?scale-down-to=1024 1024w,images/5Cs05meFL4tix3XaBRezHUKaM.png 1436w"
-                                                                                              src="images/5Cs05meFL4tix3XaBRezHUKaM.png" alt=""
+                                                                                              src="dataland/images/5Cs05meFL4tix3XaBRezHUKaM.png" alt=""
                                                                                               style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain"
                                                                                               data-framer-original-sizes="70px"></div>
                                     </div>
@@ -14588,7 +14603,7 @@
                                              data-framer-background-image-wrapper="true"><img decoding="async"
                                                                                               sizes="(min-width: 1920px) 70px, (min-width: 1440px) and (max-width: 1919px) 70px"
                                                                                               srcset="images/GNU2O61fT4vUhmjcJ5G5iyiKiA-1.png 512w?scale-down-to=512 512w,images/GNU2O61fT4vUhmjcJ5G5iyiKiA-2.png 1024w?scale-down-to=1024 1024w,images/GNU2O61fT4vUhmjcJ5G5iyiKiA.png 1210w"
-                                                                                              src="images/GNU2O61fT4vUhmjcJ5G5iyiKiA.png" alt=""
+                                                                                              src="dataland/images/GNU2O61fT4vUhmjcJ5G5iyiKiA.png" alt=""
                                                                                               style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain"
                                                                                               data-framer-original-sizes="70px"></div>
                                     </div>
@@ -14660,7 +14675,7 @@
                                              data-framer-background-image-wrapper="true"><img decoding="async"
                                                                                               sizes="(min-width: 1920px) 70px, (min-width: 1440px) and (max-width: 1919px) 70px"
                                                                                               srcset="images/wXG4bgMePprvfwOj0nVAY6gk0Eo.png 700w"
-                                                                                              src="images/wXG4bgMePprvfwOj0nVAY6gk0Eo.png" alt=""
+                                                                                              src="dataland/images/wXG4bgMePprvfwOj0nVAY6gk0Eo.png" alt=""
                                                                                               style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain"
                                                                                               data-framer-original-sizes="70px"></div>
                                     </div>
@@ -14732,7 +14747,7 @@
                                              data-framer-background-image-wrapper="true"><img decoding="async"
                                                                                               sizes="(min-width: 1920px) 70px, (min-width: 1440px) and (max-width: 1919px) 70px"
                                                                                               srcset="images/qZEqybrqd05xqt1msKF1fZ5ak-1.png 945w?scale-down-to=1024 945w,images/qZEqybrqd05xqt1msKF1fZ5ak.png 1246w"
-                                                                                              src="images/qZEqybrqd05xqt1msKF1fZ5ak.png" alt=""
+                                                                                              src="dataland/images/qZEqybrqd05xqt1msKF1fZ5ak.png" alt=""
                                                                                               style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain"
                                                                                               data-framer-original-sizes="70px"></div>
                                     </div>
@@ -14804,7 +14819,7 @@
                                              data-framer-background-image-wrapper="true"><img decoding="async"
                                                                                               sizes="(min-width: 1920px) 70px, (min-width: 1440px) and (max-width: 1919px) 70px"
                                                                                               srcset="images/e8YRMHheFWh5XoKiNm3V0PXxJk-1.png 512w?scale-down-to=512 512w,images/e8YRMHheFWh5XoKiNm3V0PXxJk-2.png 1024w?scale-down-to=1024 1024w,images/e8YRMHheFWh5XoKiNm3V0PXxJk.png 1080w"
-                                                                                              src="images/e8YRMHheFWh5XoKiNm3V0PXxJk.png" alt=""
+                                                                                              src="dataland/images/e8YRMHheFWh5XoKiNm3V0PXxJk.png" alt=""
                                                                                               style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain"
                                                                                               data-framer-original-sizes="70px"></div>
                                     </div>
@@ -14928,10 +14943,12 @@
                                          name="Microsoft" style="flex-shrink:0;image-rendering:pixelated"
                                          class="framer-yucsl4" aria-hidden="true">
                                         <div class="svgContainer"
-                                             style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                style="width:100%;height:100%">
-                                                <use href="#svg4032197043"></use>
-                                            </svg></div>
+                                             style="width:100%;height:100%;aspect-ratio:inherit">
+{{--                                            <svg--}}
+{{--                                                style="width:100%;height:100%">--}}
+{{--                                                <use href="#svg4032197043"></use>--}}
+{{--                                            </svg>--}}
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -14939,10 +14956,12 @@
                                          name="Dashlane" style="flex-shrink:0;image-rendering:pixelated"
                                          class="framer-2zqhib" aria-hidden="true">
                                         <div class="svgContainer"
-                                             style="width:100%;height:100%;aspect-ratio:inherit"><svg
-                                                style="width:100%;height:100%">
-                                                <use href="#svg1668489705"></use>
-                                            </svg></div>
+                                             style="width:100%;height:100%;aspect-ratio:inherit">
+{{--                                            <svg--}}
+{{--                                                style="width:100%;height:100%">--}}
+{{--                                                <use href="#svg1668489705"></use>--}}
+{{--                                            </svg>--}}
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -14964,7 +14983,8 @@
                                              style="width:100%;height:100%;aspect-ratio:inherit"><svg
                                                 style="width:100%;height:100%">
                                                 <use href="#svg1427495933"></use>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -14972,10 +14992,12 @@
                                          style="flex-shrink:0;image-rendering:pixelated" class="framer-1371h8u"
                                          aria-hidden="true">
                                         <div class="svgContainer"
-                                             style="width:100%;height:100%;aspect-ratio:inherit"><svg
+                                             style="width:100%;height:100%;aspect-ratio:inherit">
+                                            <svg
                                                 style="width:100%;height:100%">
                                                 <use href="#svg1176428350"></use>
-                                            </svg></div>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>

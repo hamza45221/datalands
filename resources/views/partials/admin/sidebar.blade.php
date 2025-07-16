@@ -57,6 +57,14 @@
                                     <span class="menu-title">Heromain Page Images</span>
                                 </a>
 
+                        <a class="menu-link {{ request()->routeIs('admin.dataland*') ? 'active' : '' }}"
+                                   href="{{ route('admin.dataland') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                    <span class="menu-title">Dataland</span>
+                                </a>
+
 
 
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DataLand;
 use App\Models\Mainhero;
 use App\Models\MainHeroPageImage;
 use Illuminate\Http\Request;
@@ -10,7 +11,8 @@ class FrontPagesController extends Controller
 {
     public function index()
     {
-        return view('frontpages.index');
+        $dataland = DataLand::first();
+        return view('frontpages.index',compact('dataland'));
     }
     public function indexen()
     {
