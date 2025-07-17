@@ -35,11 +35,11 @@ var p = {
         page: l(() => import("./hSG7ANHG70DZIF1ibzvyXx_177fUPdTcxWwIZsc4TFE.CGYE3F36.mjs")),
         path: "/work"
     },
-    // DdY5fvW_b: {
-    //     elements: {},
-    //     page: l(() => import("./ZPjVDKAySWeqxME3sFICprxSV5ungmfb1Wi3-fPphL8.Z3NF5NTI.mjs")),
-    //     path: "/services"
-    // },
+    DdY5fvW_b: {
+        elements: {},
+        page: l(() => import("./ZPjVDKAySWeqxME3sFICprxSV5ungmfb1Wi3-fPphL8.Z3NF5NTI.mjs")),
+        path: "/services"
+    },
     XF8IlhY4K: {
         collectionId: "rm1Es5roQ",
         elements: {},

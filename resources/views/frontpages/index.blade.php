@@ -8496,6 +8496,10 @@
     </style><!-- Start of headEnd -->
 
     <!-- End of headEnd -->
+    <script>
+        window.globalData = @json($dataland);
+    </script>
+
 </head>
 
 <body class="framer-body-augiA20Il-framer-1uUKd">

@@ -1759,7 +1759,7 @@ var Za = {damping: 47, delay: 0, mass: 1, stiffness: 425, type: "spring"},
                                                 className: "framer-styles-preset-18v92ny",
                                                 "data-styles-preset": "PCUpq0UFw",
                                                 style: {"--framer-text-color": "var(--extracted-r6o4lv, rgb(255, 255, 255))"},
-                                                children: "Data JEKASD"
+                                                children: "Data Visualization"
                                             })
                                         })
                                     },
@@ -1773,7 +1773,7 @@ var Za = {damping: 47, delay: 0, mass: 1, stiffness: 425, type: "spring"},
                                                     "--framer-letter-spacing": "-0.2px",
                                                     "--framer-line-height": "1em",
                                                     "--framer-text-color": "var(--extracted-r6o4lv, var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255)))"
-                                                }, children: "Data Visualization 12"
+                                                }, children: "Data Visualization"
                                             })
                                         }), fonts: ["CUSTOM;Basis Grotesque Pro Regular"]
                                     }
@@ -2567,10 +2567,10 @@ var I2 = {
                             })
                         })
                     }), e("div", {
-                        className: "framer-8r7hn7", "data-framer-name": "DATALANDS", name: "DATALANDS", children: e("div", {
+                        className: "framer-8r7hn7", "data-framer-name": "DATALANDS some3", name: "DATALANDS some4", children: e("div", {
                             className: "framer-1s60azr",
-                            "data-framer-name": "Datalands",
-                            name: "Datalands",
+                            "data-framer-name": "Datalands some1",
+                            name: "Datalands some2",
                             children: e(l, {
                                 breakpoint: t,
                                 overrides: {
@@ -2585,7 +2585,7 @@ var I2 = {
                                                     "--framer-line-height": "1.4em",
                                                     "--framer-text-alignment": "left",
                                                     "--framer-text-color": "var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255))"
-                                                }, children: "Datalands"
+                                                }, children: "Datalands som"
                                             })
                                         }), viewBox: "0 0 362.940357 132"
                                     },
@@ -2600,7 +2600,7 @@ var I2 = {
                                                     "--framer-line-height": "1.5em",
                                                     "--framer-text-alignment": "left",
                                                     "--framer-text-color": "var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255))"
-                                                }, children: "Datalands"
+                                                }, children: "Datalands some6"
                                             })
                                         }), viewBox: "0 0 1859.820476259159 723"
                                     }
@@ -2617,7 +2617,7 @@ var I2 = {
                                                 "--framer-line-height": "1.5em",
                                                 "--framer-text-alignment": "left",
                                                 "--framer-text-color": "var(--token-dde820d5-4982-458b-9d0e-a9d9507dbf7c, rgb(255, 255, 255))"
-                                            }, children: "Datalands"
+                                            }, children: "Datalands some7"
                                         })
                                     }),
                                     className: "framer-19sq2uk",
@@ -2678,7 +2678,7 @@ var I2 = {
                                     className: "framer-styles-preset-6vph8c",
                                     "data-styles-preset": "jH2SQvbsf",
                                     style: {"--framer-text-alignment": "left"},
-                                    children: "Datalands is a visual communication and information design studio. "
+                                    children: "Datalands some is a visual communication and information design studio. "
                                 })
                             }),
                             className: "framer-zyf7e7",
