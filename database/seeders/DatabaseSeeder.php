@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\DataLandClientImages;
 use App\Models\MainHeroPageImage;
 use Illuminate\Database\Seeder;
 
@@ -20,6 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call([PopupTableSeed::class]);
         $this->call([MainHeroPageImageSeed::class]);
         $this->call([DataLandTableSeed::class]);
-        $this->call([DataLasdCrouselImagesSeed::class]);
+        $this->call([DataLandCrouselImagesSeed::class]);
+        $this->call([DataLandClientImagesSeed::class]);
     }
 }

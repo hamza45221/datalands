@@ -51,6 +51,17 @@ Route::group(['prefix'=>'admin'], function () {
         Route::get('/', [App\Http\Controllers\Admin\DataLandController::class, 'indexImage'])->name('admin.dataland.image');
         Route::post('/store', [App\Http\Controllers\Admin\DataLandController::class, 'storeImage'])->name('admin.dataland.image.store');
         Route::delete('hero-image/delete/{id}', [\App\Http\Controllers\Admin\DataLandController::class, 'destroyImage'])->name('admin.dataland.image.delete');
-
     });
+
+    Route::group(['prefix' => 'dataland-clients-images'], function () {
+        Route::get('/', [App\Http\Controllers\Admin\DataLandController::class, 'clientImage'])->name('admin.dataland.clients.image');
+        Route::post('/store', [App\Http\Controllers\Admin\DataLandController::class, 'clientImageStore'])->name('admin.dataland.clients.image.store');
+        Route::delete('hero-image/delete/{id}', [\App\Http\Controllers\Admin\DataLandController::class, 'clientdestroyImage'])->name('admin.dataland.clients.image.delete');
+    });
+
+//    Route::get('/contact', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('admin.contact');
+    Route::get('/contact-store', [App\Http\Controllers\ContactController::class, 'store'])->name('admin.contact.store');
+
+
+
 });

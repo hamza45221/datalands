@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\DataLand;
+use App\Models\DataLandCrouselImage;
 use App\Models\Mainhero;
 use App\Models\MainHeroPageImage;
 use Illuminate\Http\Request;
@@ -12,7 +13,8 @@ class FrontPagesController extends Controller
     public function index()
     {
         $dataland = DataLand::first();
-        return view('frontpages.index',compact('dataland'));
+        $crousel_image =  DataLandCrouselImage::all();
+        return view('frontpages.index',compact('crousel_image','dataland'));
     }
     public function indexen()
     {

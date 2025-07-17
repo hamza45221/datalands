@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\DataLand;
+use App\Models\DataLandClientImages;
 use App\Models\DataLandCrouselImage;
 use App\Models\Mainhero;
 use App\Models\MainHeroPageImage;
@@ -194,6 +195,43 @@ class DataLandController extends Controller
     public function destroyImage($id)
     {
         $image = DataLandCrouselImage::findOrFail($id);
+
+        if ($image->image && \Storage::disk('public')->exists($image->image)) {
+            \Storage::disk('public')->delete($image->image);
+        }
+
+        $image->delete();
+
+        return redirect()->back()->with('success', 'Image deleted successfully!');
+    }
+
+
+
+
+    public function clientImage()
+    {
+        $images = DataLandClientImages::latest()->paginate(10);;
+        return view('admin.dataland-clients-images',compact('images'));
+    }
+
+
+    public function clientImageStore(Request $request)
+    {
+        $imageEntry = $request->id ? DataLandClientImages::findOrFail($request->id) : new DataLandClientImages();
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->store('uploads', ['disk' => 'public']);
+            $imageEntry->image = 'storage/'. $image;
+        }
+
+        $imageEntry->save();
+
+        return redirect()->back()->with('success', $request->id ? 'Image updated successfully!' : 'Image saved successfully!');
+    }
+
+    public function clientdestroyImage($id)
+    {
+        $image = DataLandClientImages::findOrFail($id);
 
         if ($image->image && \Storage::disk('public')->exists($image->image)) {
             \Storage::disk('public')->delete($image->image);
