@@ -15,8 +15,8 @@ class DataLandClientImagesSeed extends Seeder
      */
     public function run()
     {
-        $image = new DataLandClientImages();
-        $image->image = '';
-        $image->save();
+//        $image = new DataLandClientImages();
+//        $image->image = '';
+//        $image->save();
     }
 }

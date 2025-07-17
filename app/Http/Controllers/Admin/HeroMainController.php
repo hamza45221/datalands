@@ -34,26 +34,28 @@ class HeroMainController extends Controller
         $hero->strategy_links = $request->strategy_links ?? [];
         $hero->creation_links = $request->creation_links ?? [];
         $hero->footer_link = $request->footer_link ?? [];
-
-
         $rowImages = [];
 
+        // Handle image files and existing URLs
         if ($request->has('row_only_images')) {
-            foreach ($request->row_only_images as $imageData) {
+            foreach ($request->row_only_images as $index => $imageData) {
+                // If a new image is uploaded
                 if (isset($imageData['url']) && $imageData['url'] instanceof \Illuminate\Http\UploadedFile) {
-                    $path = $imageData['url']->store('public/');
+                    $path = $imageData['url']->store('public/'); // Store image
                     $rowImages[] = [
-                        'url' => Storage::url($path),
+                        'url' => Storage::url($path), // Save the public URL
                     ];
                 }
-                // If only existing image is present
+                // If only an existing image URL is provided
                 elseif (!empty($imageData['existing_url'])) {
                     $rowImages[] = [
-                        'url' => $imageData['existing_url'],
+                        'url' => $imageData['existing_url'], // Keep the old URL
                     ];
                 }
             }
         }
+
+        $hero->row_only_images = $rowImages;
 
 
         $hero->save();

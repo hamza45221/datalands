@@ -90,7 +90,7 @@
 
                                     <!--end::Export-->
                                     <!--begin::Add customer-->
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_customer">Add Cliens Image</button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_customer">Add Clients Image</button>
                                     <!--end::Add customer-->
                                 </div>
                                 <!--end::Toolbar-->
