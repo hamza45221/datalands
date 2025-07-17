@@ -16,31 +16,31 @@ class DataLandClientImagesSeed extends Seeder
     public function run()
     {
         $image = new DataLandClientImages();
-        $image->image = 'public/dataland/images/adobe-svgrepo-com.svg';
+        $image->image = 'dataland/images/adobe-svgrepo-com.svg';
         $image->save();
 
         $image = new DataLandClientImages();
-        $image->image = 'public/dataland/images/asana-svgrepo-com.svg';
+        $image->image = 'dataland/images/asana-svgrepo-com.svg';
         $image->save();
 
         $image = new DataLandClientImages();
-        $image->image = 'public/dataland/images/google-178-svgrepo-com.svg';
+        $image->image = 'dataland/images/google-178-svgrepo-com.svg';
         $image->save();
 
         $image = new DataLandClientImages();
-        $image->image = 'public/dataland/images/microsoft-svgrepo-com.svg';
+        $image->image = 'dataland/images/microsoft-svgrepo-com.svg';
         $image->save();
 
         $image = new DataLandClientImages();
-        $image->image = 'public/dataland/images/nike-4-logo-svgrepo-com.svg';
+        $image->image = 'dataland/images/nike-4-logo-svgrepo-com.svg';
         $image->save();
 
         $image = new DataLandClientImages();
-        $image->image = 'public/dataland/images/shopify-svgrepo-com.svg';
+        $image->image = 'dataland/images/shopify-svgrepo-com.svg';
         $image->save();
 
         $image = new DataLandClientImages();
-        $image->image = 'public/dataland/images/nike-4-logo-svgrepo-com.svg';
+        $image->image = 'dataland/images/nike-4-logo-svgrepo-com.svg';
         $image->save();
     }
 }
