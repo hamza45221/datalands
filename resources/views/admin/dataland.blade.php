@@ -212,6 +212,7 @@
                               </div>
 
                                 <div id="services_list_repeater">
+                                    <label class="fs-6 fw-semibold mb-2">Services List Repeater</label>
                                     <div data-repeater-list="services_list">
                                         @php
                                             $services = old('services_list', $dataland->services_list ?? []);

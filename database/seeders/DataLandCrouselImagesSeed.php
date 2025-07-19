@@ -3,10 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\DataLandCrouselImage;
-use App\Models\MainHeroPageImage;
 use Illuminate\Database\Seeder;
 
-class DataLasdCrouselImagesSeed extends Seeder
+class DataLandCrouselImagesSeed extends Seeder
 {
     /**
      * Run the database seeds.

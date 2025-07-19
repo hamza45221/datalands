@@ -233,8 +233,8 @@
                                                 <div class="row mb-5 align-items-center">
                                                     <div class="col-md-6">
                                                         <label class="form-label">Image logo</label>
-                                                        <input type="file" name="url" class="form-control image-input" accept="image/*">
-                                                        <input type="hidden" name="existing_url" value="{{ $image['url'] ?? '' }}">
+                                                        <input type="file" name="url[]" class="form-control image-input" accept="image/*">
+                                                        <input type="hidden" name="existing_url[]" value="{{ $image['url'] ?? '' }}">
 
                                                         @if (!empty($image['url']))
                                                             <img src="{{ asset($image['url']) }}" class="img-preview mt-2" style="max-height: 80px;">
@@ -256,6 +256,7 @@
                                         </a>
                                     </div>
                                 </div>
+
 
                                 <div id="footer_links_repeater">
                                     <div data-repeater-list="footer_link">
@@ -296,7 +297,7 @@
                                     </div>
 
                                     <!-- Add Button -->
-                                    <div class="form-group mt-3">
+                                    <div class="form-group my-4">
                                         <a href="javascript:;" data-repeater-create class="btn btn-sm btn-light-primary">
                                             <i class="la la-plus"></i> Add Footer Link
                                         </a>

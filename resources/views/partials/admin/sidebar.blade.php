@@ -74,6 +74,15 @@
                                 </a>
 
 
+                        <a class="menu-link {{ request()->routeIs('admin.dataland.clients.image*') ? 'active' : '' }}"
+                                   href="{{ route('admin.dataland.clients.image') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                    <span class="menu-title">Dataland Clients Image</span>
+                                </a>
+
+
 
 
 
