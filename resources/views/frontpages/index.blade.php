@@ -8500,6 +8500,267 @@
         window.globalData = @json($dataland);
     </script>
 
+
+    {{--    === =  popup  =======--}}
+
+    <style>
+        #disclosureModal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.823);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .modal-custom {
+            max-width: 985px;
+            background-color: #fff;
+            border-radius: 0;
+            padding: 0px;
+            margin: 100px auto;
+        }
+
+        .modal-header h2 {
+            font-size: 40px;
+            font-weight: 400;
+            color: black;
+            margin-bottom: 15px;
+            line-height: 40px;
+            letter-spacing: -2px;
+        }
+
+        .modal-body {
+            padding: 0px 24px;
+            padding-left: 55px;
+        }
+
+        .modal-body p {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .btn-accept {
+            background-color: #1e2430;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            font-weight: bold;
+            border-radius: 0;
+        }
+
+        .btn:hover {
+            background-color: #1e2430;
+            color: white;
+        }
+
+
+        .btn-decline {
+            background: none;
+            color: #6c757d;
+            text-decoration: underline;
+            border: none;
+            margin-left: 20px;
+        }
+
+        .btn-decline:hover {
+            background-color: white !important;
+            color: #6c757d !important;
+        }
+
+        .disclosure-box {
+            background-color: #f5f4f2;
+            padding: 40px 50px;
+            margin-top: 30px;
+        }
+
+        .disclosure-box p {
+            margin: 0;
+            color: #000;
+        }
+
+        .logo {
+            text-align: right;
+            font-weight: 500;
+            letter-spacing: 3px;
+            font-size: 25px;
+            padding: 36px 55px;
+            color: black;
+        }
+
+        .model-scroll {
+            overflow: auto;
+            height: 160px;
+            padding-right: 120px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #393939;
+        }
+
+        .page-content {
+            display: none;
+        }
+
+        .page-content.active {
+            display: block;
+        }
+
+        /* ====================== secong ========================= */
+
+        .modal-custom-second {
+            background: white;
+            padding: 28px;
+            width: 985px;
+            height: 480px;
+        }
+
+        .modal-custom-second p {
+            margin: 0;
+            font-size: 13px;
+            color: black;
+        }
+
+        .second-page-back-link {
+            color: #3a4355;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            background-color: white;
+        }
+
+        .second-page-back-link:hover {
+            text-decoration: underline;
+        }
+
+        .second-page-title {
+            font-size: 58px;
+            font-weight: 500;
+            margin-top: 20px;
+            color: black;
+            margin-bottom: 15px;
+            line-height: 40px;
+            letter-spacing: -2px;
+        }
+
+        .second-page-subtitle {
+            font-size: 20px !important;
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+
+        .second-page-section-title {
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
+        .second-page-right-align {
+            text-align: right;
+        }
+
+        .second-page-logo {
+            font-size: 25px;
+            color: black;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+
+        .second-page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0px;
+        }
+
+        p a {
+            color: black;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .model-step-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-top: 40px;
+        }
+
+
+        .swiper {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .swiper-wrapper {
+            transition-timing-function: linear !important;
+        }
+
+        .swiper-slide {
+            width: auto;
+            padding: 0 50px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 0;
+            margin: 10px 0;
+            white-space: nowrap;
+        }
+
+
+        @media (max-width: 768px) {
+            .second-page-right-align {
+                text-align: left;
+            }
+
+            .second-page-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+
+        .preloader {
+            font-family: 'arialregular';
+        }
+
+        .cta {
+            border: 1px solid white;
+            max-width: 300px;
+            padding: 5px 10px;
+        }
+
+        .cta img {
+            width: 20px;
+        }
+
+    </style>
+
 </head>
 
 <body class="framer-body-augiA20Il-framer-1uUKd">
@@ -8510,6 +8771,71 @@
 <!-- Start of bodyStart -->
 
 <!-- End of bodyStart -->
+
+
+<div id="popup" class="popup">
+    <div class="popup__bg" id="popup-bg"></div>
+    <div class="popup__close" id="popup-close" data-link>Close</div>
+    <div class="popup__element" id="ajax-popup"></div>
+</div>
+
+
+<div id="disclosureModal" style="display: none;">
+    <div class="modal-custom page-content active" id="page1">
+        <div class="logo">{{ $popup->main_title }}</div>
+
+        <div class="modal-body">
+            <div class="model-scroll">
+                {!! $popup->description !!}
+            </div>
+            <div style="margin-top: 20px;">
+                <button class="btn btn-accept" id="acceptBtn">I Accept</button>
+                <button class="btn btn-decline" id="declineBtn">I Do Not Accept</button>
+            </div>
+        </div>
+        <div class="disclosure-box">
+            <h6 class="fw-bold mb-2">{{ $popup->footer_title }}</h6>
+            <p>{!! $popup->footer_desc  !!}</p>
+        </div>
+    </div>
+    <!-- Hidden second page -->
+    <div id="page2" class="modal-custom-second" style="display: none;">
+        <div class="second-page-header">
+            <a href="#" class="second-page-back-link" onclick="goBackToPage1()">
+                <i class="fa-solid fa-angle-left me-2"></i><span style="text-decoration: underline;">Back</span>
+            </a>
+            <div class="second-page-logo">
+                {{ $popup->main_title }}
+            </div>
+        </div>
+
+        <h1 class="second-page-title">{{ $popup->page2_heading }}</h1>
+        <p class="second-page-subtitle pb-4">{{ $popup->page2_sub_heading }} </p>
+
+        <div class="model-scroll py-0" style="height: 230px !important;">
+
+            @php
+                $titles = json_decode($popup->page2_detail_title ?? '[]', true);
+                $descs  = json_decode($popup->page2_detail_desc ?? '[]', true);
+            @endphp
+
+            @foreach($titles as $index => $title)
+                <div class="row mb-4" style="display: flex; justify-content: space-between; margin-top: 12px">
+                    <div class="col-md-6">
+                        <p class="second-page-section-title">{{ $title }}</p>
+                    </div>
+                    <div class="col-md-6 second-page-left-align"
+                         style="display: flex;justify-content: start;width: 25%;align-items: start;flex-direction: column;">
+                        {!! $descs[$index] ?? '' !!}
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+
+
+
 <div id="main"
      data-framer-hydrate-v2="{&quot;routeId&quot;:&quot;augiA20Il&quot;,&quot;localeId&quot;:&quot;default&quot;,&quot;breakpoints&quot;:[{&quot;hash&quot;:&quot;qs7kru&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 1920px)&quot;},{&quot;hash&quot;:&quot;72rtr7&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 1440px) and (max-width: 1919px)&quot;},{&quot;hash&quot;:&quot;3v2uua&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 810px) and (max-width: 1439px)&quot;},{&quot;hash&quot;:&quot;7gi421&quot;,&quot;mediaQuery&quot;:&quot;(max-width: 809px)&quot;}]}"
      data-framer-ssr-released-at="2025-02-04T15:43:10.939Z" data-framer-page-optimized-at="2025-02-05T22:58:10.271Z">
@@ -10892,6 +11218,79 @@
 </div>
 <!-- Start of bodyEnd -->
 
+    <script>
+        window.onload = function () {
+            if (!localStorage.getItem('disclosureAccepted')) {
+                document.getElementById('disclosureModal').style.display = 'flex';
+            }
+        };
+
+        // Handle Accept
+        if (document.getElementById('acceptBtn')) {
+            document.getElementById('acceptBtn').addEventListener('click', function () {
+                localStorage.setItem('disclosureAccepted', 'true');
+                document.getElementById('disclosureModal').style.display = 'none';
+            });
+        }
+
+        // Decline button - show next page
+        if (document.getElementById('declineBtn')) {
+            document.getElementById('declineBtn').addEventListener('click', function () {
+                document.getElementById('page1').style.display = 'none';
+                document.getElementById('page2').style.display = 'block';
+            });
+        }
+
+        function showPage(pageId) {
+            document.querySelectorAll('.page-content').forEach(div => {
+                div.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            alert('Cookies Accepted!');
+        }
+
+        function goBackToPage1() {
+            document.getElementById('page2').style.display = 'none';
+            document.getElementById('page1').style.display = 'block';
+        }
+
+
+        // ======= aI agree cookies ============
+
+
+        if (localStorage.getItem('custom_cookie_consent') === 'true') {
+            document.getElementById('customAcceptBanner').style.display = 'none';
+        }
+        document.getElementById('customCookiesAgree').addEventListener('click', function () {
+            localStorage.setItem('custom_cookie_consent', 'true');
+            document.getElementById('customAcceptBanner').style.display = 'none';
+        });
+
+
+        // ============= swiper ===========
+
+
+        const swiper = new Swiper(".marqueeSwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+            freeMode: true,
+            freeModeMomentum: false,
+            allowTouchMove: false,
+            speed: 4000, // increase for smoother slow scroll
+            autoplay: {
+                disableOnInteraction: false,
+            },
+        });
+        setTimeout(function () {
+            document.getElementById('preloader').remove();
+        }, 5000)
+
+    </script>
 <!-- End of bodyEnd -->
 </body>
 

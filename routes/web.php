@@ -62,6 +62,7 @@ Route::group(['prefix'=>'admin'], function () {
 //    Route::get('/contact', [App\Http\Controllers\Admin\AdminController::class, 'index'])->name('admin.contact');
     Route::get('/contact-store', [App\Http\Controllers\ContactController::class, 'store'])->name('admin.contact.store');
 
-
+    Route::get('/popup', [\App\Http\Controllers\Admin\PopupController::class, 'popup'])->name('admin.popup');
+    Route::post('/popup-store', [\App\Http\Controllers\Admin\PopupController::class, 'popupStore'])->name('admin.popup.store');
 
 });
