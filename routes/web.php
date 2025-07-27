@@ -21,7 +21,7 @@ Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\FrontPagesController::class, 'index'])->name('home');
-Route::get('/index-en', [App\Http\Controllers\FrontPagesController::class, 'indexen'])->name('index.en');
+Route::get('/verticalparis', [App\Http\Controllers\FrontPagesController::class, 'indexen'])->name('index.en');
 
 
 
